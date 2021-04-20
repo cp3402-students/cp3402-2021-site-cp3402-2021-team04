@@ -1,0 +1,8 @@
+# Default ignored files
+/shelf/
+/workspace.xml
+# Datasource local storage ignored files
+/../../../../../../../../../../../:\Users\marsh\vagrant-local\www\Townsville-Jazz\public_html\wp-content\themes\cp3402-2021-site-cp3402-2021-team04\.idea/dataSources/
+/dataSources.local.xml
+# Editor-based HTTP Client requests
+/httpRequests/
