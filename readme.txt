@@ -1,4 +1,4 @@
-=== jazz-theme ===
+=== JazzClubTownsville ===
 
 Contributors: automattic
 Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
@@ -10,11 +10,11 @@ Stable tag: 1.0.0
 License: GNU General Public License v2 or later
 License URI: LICENSE
 
-A starter theme called jazz-theme.
+A starter theme called JazzClubTownsville.
 
 == Description ==
 
-Description
+Team 04 Underscore Starter Theme
 
 == Installation ==
 
@@ -26,7 +26,7 @@ Description
 
 = Does this theme support any plugins? =
 
-jazz-theme includes support for WooCommerce and for Infinite Scroll in Jetpack.
+JazzClubTownsville includes support for WooCommerce and for Infinite Scroll in Jetpack.
 
 == Changelog ==
 
