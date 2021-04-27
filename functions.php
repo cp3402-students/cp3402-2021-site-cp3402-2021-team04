@@ -105,6 +105,46 @@ endif;
 add_action( 'after_setup_theme', 'jazzclubtownsville_setup' );
 
 /**
+ * Register custom fonts.
+ */
+function jazzclubtownsville_fonts_url()
+{
+	$fonts_url = '';
+
+	/**
+	 * Translators: If there are characters in your language that are not
+	 * supported by Source Sans Pro and Source Serif Pro, translate this to 'off'. Do not translate
+	 * into your own language.
+	 */
+	$source_sans_pro = _x('on', 'Source Sans Pro font: on or off', 'jazzclubtownsville');
+	$source_serif_pro = _x('on', 'Source Serif Pro font: on or off', 'jazzclubtownsville');
+
+	$font_families = array();
+
+	if ('off' !== $source_sans_pro) {
+		$font_families[] = 'Source Sans Pro:400,400i,700,900';
+	}
+
+	if ('off' !== $source_serif_pro) {
+		$font_families[] = 'Source Serif Pro:400,400i,700,700i';
+	}
+
+
+	if (in_array('on', array($source_sans_pro, $source_serif_pro))) {
+
+		$query_args = array(
+			'family' => urlencode(implode('|', $font_families)),
+			'subset' => urlencode('latin,latin-ext'),
+		);
+
+		$fonts_url = add_query_arg($query_args, 'https://fonts.googleapis.com/css');
+	}
+
+	return esc_url_raw($fonts_url);
+}
+
+
+/**
  * Set the content width in pixels, based on the theme's design and stylesheet.
  *
  * Priority 0 to make it available to lower priority callbacks.
@@ -140,6 +180,9 @@ add_action( 'widgets_init', 'jazzclubtownsville_widgets_init' );
  * Enqueue scripts and styles.
  */
 function jazzclubtownsville_scripts() {
+	// Enqueue Google Fonts: Source Sans Pro and Source Serif Pro
+	wp_enqueue_style('jazzclubtownsville-fonts', jazzclubtownsville_fonts_url());
+
 	wp_enqueue_style( 'jazzclubtownsville-style', get_stylesheet_uri(), array(), wp_get_theme()->get('Version') );
 	wp_style_add_data( 'jazzclubtownsville-style', 'rtl', 'replace' );
 
