@@ -17,4 +17,11 @@
 3. After locating the `themes` directory
    run ```git clone https://github.com/cp3402-students/cp3402-2021-site-cp3402-2021-team04 underscores-jazz```
 
+## Requirements
+
+requires the following dependencies:
+
+- [Node.js](https://nodejs.org/)
+- [Composer](https://getcomposer.org/)
+
 [Production Wordpress Site](http://ec2-3-104-76-166.ap-southeast-2.compute.amazonaws.com/townsville_jazz/)
