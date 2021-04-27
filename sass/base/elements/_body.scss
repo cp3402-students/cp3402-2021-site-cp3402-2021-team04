@@ -1,3 +1,13 @@
 body {
-	background: $color__background-body; // Fallback for when there is no custom background color defined.
+  background: $color__background-body; // Fallback for when there is no custom background color defined.
+}
+
+// Add padding to main content
+.site-main {
+  padding: 1em;
+
+  // Add more padding on larger displays
+  @media screen and (min-width: $query__small) {
+    padding: 2em;
+  }
 }
