@@ -51,7 +51,11 @@ if ( ! function_exists( 'jazzclubtownsville_setup' ) ) :
 		register_nav_menus(
 			array(
 				'menu-1' => esc_html__( 'Primary', 'jazzclubtownsville' ),
+				'social' => esc_html__( 'Social Media Menu', 'jazzclubtownsville' ),
+
+
 			)
+
 		);
 
 		/*
@@ -221,3 +225,7 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
+function back_to_top() {
+	echo "Back to top";
+
+}

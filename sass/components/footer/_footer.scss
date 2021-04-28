@@ -1,6 +1,55 @@
 // change background color of site footer
 .site-footer {
   grid-area: footer;
-  background-color: orange;
+  background-color: slategrey;
   color:white;
+  padding: 1em;
+  text-align: center;
+  display: inline-block;
+}
+
+.back-to-top , .social-nav, .site-info {
+  width: 33%;
+  float:left;
+
+  // Gets screen width and if width is < query__medium stacks them instead of length ways
+  @media screen and (max-width: $query__medium) {
+    float:none;
+    width: 100%;
+  }
+}
+
+.back-to-top{
+  a{
+
+  }
+}
+
+.social-nav{
+  ul { // Social Nav Menu
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    a{ // Writing on Social nav menu
+      display: block;
+      padding: .25em 1em;
+      color: #E5F2C9;
+      text-decoration: none;
+
+      &:hover, &:focus { // Hovering over the Social nav menu
+        text-decoration: underline;
+        background-color: #191516;
+        border-radius: 25px;
+
+      }
+
+    }
+
+  }
+}
+
+.site-info{
 }
