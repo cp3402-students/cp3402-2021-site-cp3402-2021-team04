@@ -23,7 +23,7 @@
 		<div class="site-info">
 				<?php
 				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme %1$s by %2$s.', 'jazzclubtownsville' ), 'jazzclubtownsville', '<a href="https://github.com/cp3402-students/cp3402-2021-site-cp3402-2021-team04">Team 04</a>' );
+				printf( esc_html__( 'Theme: %1$s %2$s.', 'jazzclubtownsville' ), '&copy;', '<a href="https://github.com/cp3402-students/cp3402-2021-site-cp3402-2021-team04">Team 04</a>' );
 				?>
 		</div><!-- .site-info -->
 
