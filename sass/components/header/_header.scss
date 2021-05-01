@@ -1,0 +1,142 @@
+// Assign header styling and padding
+.site-header {
+  position: relative;
+  padding: 1em;
+  color: $color__text-white;
+  background-color: $color__background-header;
+
+  // Add different padding on larger displays
+  @media screen and (min-width: $query__mobile-m) {
+    padding: 1em 2em;
+  }
+}
+
+.site-branding {
+  display: flex;
+  min-height: $size__site-branding-height;
+  margin-bottom: 0.25em;
+
+  .custom-logo-link {
+    margin-right: 1em;
+
+    img {
+      height: $size__site-branding-height;
+      width: auto;
+    }
+  }
+
+  .site-title {
+    margin: 0;
+    padding: 0;
+
+    a {
+      color: $color__text-white;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .site-branding-text {
+    vertical-align: top;
+    width: 90%;
+
+    .site-title {
+      float: left;
+    }
+
+    .site-description {
+      float: right;
+      color: black;
+      font-size: 1.25em;
+    }
+  }
+}
+
+@media screen and (max-width: $query__4k) {
+  .site-title {
+    font-size: 4em;
+  }
+  .site-description {
+    font-size: 1em !important;
+  }
+}
+
+@media screen and (max-width: $query__laptop-l) {
+
+  // Move site-description under site-title
+  .site-branding-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .site-title {
+    font-size: 3em;
+  }
+  
+  // Padding above site-description to keep site-title on screen.
+  .site-description {
+    margin: 0 0 0 1em;
+    font-size: 2em !important;
+  }
+}
+
+@media screen and (max-width: $query__laptop) {
+  .site-title {
+    font-size: 2.5em;
+  }
+
+  .site-description {
+    font-size: 1.8em !important;
+  }
+}
+
+@media screen and (max-width: $query__tablet) {
+  .site-title {
+    font-size: 2em;
+  }
+  .site-description {
+    font-size: 1.4em !important;
+  }
+}
+
+@media screen and (max-width: $query__tablet-s) {
+  .site-title {
+    font-size: 1.2em;
+  }
+  .site-description {
+    font-size: 0.8em !important;
+  }
+}
+
+@media screen and (max-width: $query__mobile-l) {
+  .site-title {
+    font-size: 1.3em;
+  }
+  .site-description {
+    font-size: 1em !important;
+  }
+}
+
+@media only screen and (max-width: $query__mobile-m) {
+  .site-title {
+    font-size: 1.09em;
+  }
+  .site-description {
+    font-size: 0.78em !important;
+  }
+
+}
+
+@media screen and (max-width: $query__mobile-s) {
+  .site-title {
+    font-size: 1.25em;
+  }
+  .site-description {
+    font-size: 0.5em !important;
+  }
+}
+
