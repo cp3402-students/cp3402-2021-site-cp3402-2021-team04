@@ -382,13 +382,7 @@ html {
 body, button, input, select, optgroup, textarea {
   color: #404040;
   font-family: "Source Serif Pro", Georgia, Cambria, "Times New Roman", Times, serif;
-  font-size: 16px;
   line-height: 1.5;
-}
-@media screen and (min-width: 600px) {
-  body, button, input, select, optgroup, textarea {
-    font-size: 20px;
-  }
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -481,7 +475,7 @@ body {
 .site-main {
   padding: 1em;
 }
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 768px) {
   .site-main {
     padding: 2em;
   }
@@ -641,6 +635,574 @@ textarea {
 /*--------------------------------------------------------------
 # Layouts
 --------------------------------------------------------------*/
+.site {
+  display: grid;
+  grid-template-columns: auto 25%;
+  grid-template-areas: "header header" "main sidebar" "footer footer";
+}
+
+.site-header {
+  grid-area: header;
+}
+
+.site-main {
+  grid-area: main;
+  overflow: hidden;
+  /* Resolves issue with <pre> elements forcing full width. */
+}
+
+.widget-area {
+  grid-area: sidebar;
+}
+
+.site-footer {
+  grid-area: footer;
+}
+
+.no-sidebar .site {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-areas: "header" "main" "footer";
+}
+
+.site-header {
+  position: relative;
+  padding: 1em;
+  color: #ffffff;
+  background-color: #dfb301;
+}
+@media screen and (min-width: 375px) {
+  .site-header {
+    padding: 1em 2em;
+  }
+}
+
+.site-branding {
+  display: flex;
+  min-height: 125px;
+  margin-bottom: 0.25em;
+}
+.site-branding .custom-logo-link {
+  margin-right: 1em;
+}
+.site-branding .custom-logo-link img {
+  height: 125px;
+  width: auto;
+}
+.site-branding .site-title {
+  margin: 0;
+  padding: 0;
+}
+.site-branding .site-title a {
+  color: #ffffff;
+  text-decoration: none;
+}
+.site-branding .site-title a:hover {
+  text-decoration: underline;
+}
+.site-branding .site-branding-text {
+  vertical-align: top;
+  width: 90%;
+}
+.site-branding .site-branding-text .site-title {
+  float: left;
+}
+.site-branding .site-branding-text .site-description {
+  float: right;
+  color: black;
+  font-size: 1.25em;
+}
+
+@media screen and (max-width: 2560px) {
+  .site-title {
+    font-size: 4em;
+  }
+
+  .site-description {
+    font-size: 1em !important;
+  }
+}
+@media screen and (max-width: 1440px) {
+  .site-branding-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .site-title {
+    font-size: 3em;
+  }
+
+  .site-description {
+    margin: 0 0 0 1em;
+    font-size: 2em !important;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .site-title {
+    font-size: 2.5em;
+  }
+
+  .site-description {
+    font-size: 1.8em !important;
+  }
+}
+@media screen and (max-width: 768px) {
+  .site-title {
+    font-size: 2em;
+  }
+
+  .site-description {
+    font-size: 1.4em !important;
+  }
+}
+@media screen and (max-width: 525px) {
+  .site-title {
+    font-size: 1.2em;
+  }
+
+  .site-description {
+    font-size: 0.8em !important;
+  }
+}
+@media screen and (max-width: 425px) {
+  .site-title {
+    font-size: 1.3em;
+  }
+
+  .site-description {
+    font-size: 1em !important;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .site-title {
+    font-size: 1.09em;
+  }
+
+  .site-description {
+    font-size: 0.78em !important;
+  }
+}
+@media screen and (max-width: 320px) {
+  .site-title {
+    font-size: 1.25em;
+  }
+
+  .site-description {
+    font-size: 0.5em !important;
+  }
+}
+.site-header {
+  position: relative;
+  padding: 1em;
+  color: #ffffff;
+  background-color: #dfb301;
+}
+@media screen and (min-width: 375px) {
+  .site-header {
+    padding: 1em 2em;
+  }
+}
+
+.site-branding {
+  display: flex;
+  min-height: 125px;
+  margin-bottom: 0.25em;
+}
+.site-branding .custom-logo-link {
+  margin-right: 1em;
+}
+.site-branding .custom-logo-link img {
+  height: 125px;
+  width: auto;
+}
+.site-branding .site-title {
+  margin: 0;
+  padding: 0;
+}
+.site-branding .site-title a {
+  color: #ffffff;
+  text-decoration: none;
+}
+.site-branding .site-title a:hover {
+  text-decoration: underline;
+}
+.site-branding .site-branding-text {
+  vertical-align: top;
+  width: 90%;
+}
+.site-branding .site-branding-text .site-title {
+  float: left;
+}
+.site-branding .site-branding-text .site-description {
+  float: right;
+  color: black;
+  font-size: 1.25em;
+}
+
+@media screen and (max-width: 2560px) {
+  .site-title {
+    font-size: 4em;
+  }
+
+  .site-description {
+    font-size: 1em !important;
+  }
+}
+@media screen and (max-width: 1440px) {
+  .site-branding-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .site-title {
+    font-size: 3em;
+  }
+
+  .site-description {
+    margin: 0 0 0 1em;
+    font-size: 2em !important;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .site-title {
+    font-size: 2.5em;
+  }
+
+  .site-description {
+    font-size: 1.8em !important;
+  }
+}
+@media screen and (max-width: 768px) {
+  .site-title {
+    font-size: 2em;
+  }
+
+  .site-description {
+    font-size: 1.4em !important;
+  }
+}
+@media screen and (max-width: 525px) {
+  .site-title {
+    font-size: 1.2em;
+  }
+
+  .site-description {
+    font-size: 0.8em !important;
+  }
+}
+@media screen and (max-width: 425px) {
+  .site-title {
+    font-size: 1.3em;
+  }
+
+  .site-description {
+    font-size: 1em !important;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .site-title {
+    font-size: 1.09em;
+  }
+
+  .site-description {
+    font-size: 0.78em !important;
+  }
+}
+@media screen and (max-width: 320px) {
+  .site-title {
+    font-size: 1.25em;
+  }
+
+  .site-description {
+    font-size: 0.5em !important;
+  }
+}
+.site {
+  display: grid;
+  grid-template-columns: 25% auto;
+  grid-template-areas: "header header" "sidebar main" "footer footer";
+}
+
+.site-header {
+  grid-area: header;
+}
+
+.site-main {
+  grid-area: main;
+  overflow: hidden;
+  /* Resolves issue with <pre> elements forcing full width. */
+}
+
+.widget-area {
+  grid-area: sidebar;
+}
+
+.site-footer {
+  grid-area: footer;
+}
+
+.no-sidebar .site {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-areas: "header" "main" "footer";
+}
+
+.site-header {
+  position: relative;
+  padding: 1em;
+  color: #ffffff;
+  background-color: #dfb301;
+}
+@media screen and (min-width: 375px) {
+  .site-header {
+    padding: 1em 2em;
+  }
+}
+
+.site-branding {
+  display: flex;
+  min-height: 125px;
+  margin-bottom: 0.25em;
+}
+.site-branding .custom-logo-link {
+  margin-right: 1em;
+}
+.site-branding .custom-logo-link img {
+  height: 125px;
+  width: auto;
+}
+.site-branding .site-title {
+  margin: 0;
+  padding: 0;
+}
+.site-branding .site-title a {
+  color: #ffffff;
+  text-decoration: none;
+}
+.site-branding .site-title a:hover {
+  text-decoration: underline;
+}
+.site-branding .site-branding-text {
+  vertical-align: top;
+  width: 90%;
+}
+.site-branding .site-branding-text .site-title {
+  float: left;
+}
+.site-branding .site-branding-text .site-description {
+  float: right;
+  color: black;
+  font-size: 1.25em;
+}
+
+@media screen and (max-width: 2560px) {
+  .site-title {
+    font-size: 4em;
+  }
+
+  .site-description {
+    font-size: 1em !important;
+  }
+}
+@media screen and (max-width: 1440px) {
+  .site-branding-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .site-title {
+    font-size: 3em;
+  }
+
+  .site-description {
+    margin: 0 0 0 1em;
+    font-size: 2em !important;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .site-title {
+    font-size: 2.5em;
+  }
+
+  .site-description {
+    font-size: 1.8em !important;
+  }
+}
+@media screen and (max-width: 768px) {
+  .site-title {
+    font-size: 2em;
+  }
+
+  .site-description {
+    font-size: 1.4em !important;
+  }
+}
+@media screen and (max-width: 525px) {
+  .site-title {
+    font-size: 1.2em;
+  }
+
+  .site-description {
+    font-size: 0.8em !important;
+  }
+}
+@media screen and (max-width: 425px) {
+  .site-title {
+    font-size: 1.3em;
+  }
+
+  .site-description {
+    font-size: 1em !important;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .site-title {
+    font-size: 1.09em;
+  }
+
+  .site-description {
+    font-size: 0.78em !important;
+  }
+}
+@media screen and (max-width: 320px) {
+  .site-title {
+    font-size: 1.25em;
+  }
+
+  .site-description {
+    font-size: 0.5em !important;
+  }
+}
+.site-header {
+  position: relative;
+  padding: 1em;
+  color: #ffffff;
+  background-color: #dfb301;
+}
+@media screen and (min-width: 375px) {
+  .site-header {
+    padding: 1em 2em;
+  }
+}
+
+.site-branding {
+  display: flex;
+  min-height: 125px;
+  margin-bottom: 0.25em;
+}
+.site-branding .custom-logo-link {
+  margin-right: 1em;
+}
+.site-branding .custom-logo-link img {
+  height: 125px;
+  width: auto;
+}
+.site-branding .site-title {
+  margin: 0;
+  padding: 0;
+}
+.site-branding .site-title a {
+  color: #ffffff;
+  text-decoration: none;
+}
+.site-branding .site-title a:hover {
+  text-decoration: underline;
+}
+.site-branding .site-branding-text {
+  vertical-align: top;
+  width: 90%;
+}
+.site-branding .site-branding-text .site-title {
+  float: left;
+}
+.site-branding .site-branding-text .site-description {
+  float: right;
+  color: black;
+  font-size: 1.25em;
+}
+
+@media screen and (max-width: 2560px) {
+  .site-title {
+    font-size: 4em;
+  }
+
+  .site-description {
+    font-size: 1em !important;
+  }
+}
+@media screen and (max-width: 1440px) {
+  .site-branding-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .site-title {
+    font-size: 3em;
+  }
+
+  .site-description {
+    margin: 0 0 0 1em;
+    font-size: 2em !important;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .site-title {
+    font-size: 2.5em;
+  }
+
+  .site-description {
+    font-size: 1.8em !important;
+  }
+}
+@media screen and (max-width: 768px) {
+  .site-title {
+    font-size: 2em;
+  }
+
+  .site-description {
+    font-size: 1.4em !important;
+  }
+}
+@media screen and (max-width: 525px) {
+  .site-title {
+    font-size: 1.2em;
+  }
+
+  .site-description {
+    font-size: 0.8em !important;
+  }
+}
+@media screen and (max-width: 425px) {
+  .site-title {
+    font-size: 1.3em;
+  }
+
+  .site-description {
+    font-size: 1em !important;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .site-title {
+    font-size: 1.09em;
+  }
+
+  .site-description {
+    font-size: 0.78em !important;
+  }
+}
+@media screen and (max-width: 320px) {
+  .site-title {
+    font-size: 1.25em;
+  }
+
+  .site-description {
+    font-size: 0.5em !important;
+  }
+}
 /*--------------------------------------------------------------
 # Components
 --------------------------------------------------------------*/

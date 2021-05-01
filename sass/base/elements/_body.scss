@@ -7,7 +7,7 @@ body {
   padding: 1em;
 
   // Add more padding on larger displays
-  @media screen and (min-width: $query__small) {
+  @media screen and (min-width: $query__tablet) {
     padding: 2em;
   }
 }
