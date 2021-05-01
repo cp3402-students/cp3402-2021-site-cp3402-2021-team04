@@ -26,44 +26,56 @@
 	<a class="skip-link screen-reader-text"
 	   href="#primary"><?php esc_html_e('Skip to content', 'jazzclubtownsville'); ?></a>
 
-	<header id="masthead" class="site-header">
-		<div class="site-branding">
-			<!-- Display site logo -->
-			<div class="custom-logo">
-				<?php the_custom_logo(); ?>
-			</div>
-			<div class="site-branding-text">
-				<?php
-				if (is_front_page() && is_home()) :
-					?>
-					<h1 class="site-title"><a href="<?php echo esc_url(home_url('/')); ?>"
-											  rel="home"><?php bloginfo('name'); ?></a></h1>
-				<?php
-				else :
-					?>
-					<p class="site-title"><a href="<?php echo esc_url(home_url('/')); ?>"
-											 rel="home"><?php bloginfo('name'); ?></a></p>
-				<?php
-				endif;
-				$jazzclubtownsville_description = get_bloginfo('description', 'display');
-				if ($jazzclubtownsville_description || is_customize_preview()) :
-					?>
-					<p class="site-description"><?php echo $jazzclubtownsville_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
-						?></p>
-				<?php endif; ?>
-			</div>
-		</div><!-- .site-branding -->
+	<?php if (get_header_image()) : // Adds Header image above Header. Only displays on Home page. ?>
+	<figure class="header-image">
+		<div id="site-header">
+			<a href="<?php echo esc_url(home_url('/')); ?>" rel="home">
+				<img src="<?php header_image(); ?>" width="<?php echo absint(get_custom_header()->width); ?>"
+					 height="<?php echo absint(get_custom_header()->height); ?>"
+					 alt="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>">
+			</a>
+	</figure>
+</div>
+<?php endif; ?>
 
-		<nav id="site-navigation" class="main-navigation">
-			<button class="menu-toggle" aria-controls="primary-menu"
-					aria-expanded="false"><?php esc_html_e('Primary Menu', 'jazzclubtownsville'); ?></button>
+<header id="masthead" class="site-header">
+	<div class="site-branding">
+		<!-- Display site logo -->
+		<div class="custom-logo">
+			<?php the_custom_logo(); ?>
+		</div>
+		<div class="site-branding-text">
 			<?php
-			wp_nav_menu(
-				array(
-					'theme_location' => 'menu-1',
-					'menu_id' => 'primary-menu',
-				)
-			);
-			?>
-		</nav><!-- #site-navigation -->
-	</header><!-- #masthead -->
+			if (is_front_page() && is_home()) :
+				?>
+				<h1 class="site-title"><a href="<?php echo esc_url(home_url('/')); ?>"
+										  rel="home"><?php bloginfo('name'); ?></a></h1>
+			<?php
+			else :
+				?>
+				<p class="site-title"><a href="<?php echo esc_url(home_url('/')); ?>"
+										 rel="home"><?php bloginfo('name'); ?></a></p>
+			<?php
+			endif;
+			$jazzclubtownsville_description = get_bloginfo('description', 'display');
+			if ($jazzclubtownsville_description || is_customize_preview()) :
+				?>
+				<p class="site-description"><?php echo $jazzclubtownsville_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+					?></p>
+			<?php endif; ?>
+		</div>
+	</div><!-- .site-branding -->
+
+	<nav id="site-navigation" class="main-navigation">
+		<button class="menu-toggle" aria-controls="primary-menu"
+				aria-expanded="false"><?php esc_html_e('Primary Menu', 'jazzclubtownsville'); ?></button>
+		<?php
+		wp_nav_menu(
+			array(
+				'theme_location' => 'menu-1',
+				'menu_id' => 'primary-menu',
+			)
+		);
+		?>
+	</nav><!-- #site-navigation -->
+</header><!-- #masthead -->
