@@ -67,7 +67,7 @@
   }
 }
 
-@media screen and (max-width: $query__4k) {
+@media screen and (min-width: $query__laptop-l) {
   .site-title {
     font-size: 4em;
   }
