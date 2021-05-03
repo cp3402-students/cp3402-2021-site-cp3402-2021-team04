@@ -97,7 +97,7 @@ if ( ! function_exists( 'jazzclubtownsville_setup' ) ) :
 		add_theme_support(
 			'custom-logo',
 			array(
-				'height'      => 250,
+				'height'      => 1000,
 				'width'       => 250,
 				'flex-width'  => true,
 				'flex-height' => true,

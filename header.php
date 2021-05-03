@@ -26,7 +26,7 @@
 	<a class="skip-link screen-reader-text"
 	   href="#primary"><?php esc_html_e('Skip to content', 'jazzclubtownsville'); ?></a>
 
-	<?php if (get_header_image()) : // Adds Header image above Header. Only displays on Home page. ?>
+	<?php if (get_header_image() && is_front_page()) : // Adds Header image above Header. Only displays on Home page. ?>
 	<figure class="header-image">
 		<div id="site-header">
 			<a href="<?php echo esc_url(home_url('/')); ?>" rel="home">
