@@ -68,7 +68,7 @@
 
 	<nav id="site-navigation" class="main-navigation">
 		<button class="menu-toggle" aria-controls="primary-menu"
-				aria-expanded="false"><?php esc_html_e('Primary Menu', 'jazzclubtownsville'); ?></button>
+				aria-expanded="false"><?php esc_html_e('Menu', 'jazzclubtownsville'); ?></button>
 		<?php
 		wp_nav_menu(
 			array(

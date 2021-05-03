@@ -1,88 +1,95 @@
+// Mobile Styling
 .main-navigation {
-  display: block;
-  width: 100%;
-
-  ul {
-    display: none;
-    list-style: none;
-    margin: 0;
-    padding-left: 0;
-
-    ul {
-      box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-      float: left;
-      position: absolute;
-      top: 100%;
-      left: -999em;
-      z-index: 99999;
-
-      ul {
-        left: -999em;
-        top: 0;
-      }
-
-      li {
-
-        &:hover > ul,
-        &.focus > ul {
-          display: block;
-          left: auto;
-        }
-      }
-
-      a {
-        width: 200px;
-      }
-
-      :hover > a,
-      .focus > a {
-      }
-
-      a:hover,
-      a.focus {
-      }
-    }
-
-    li:hover > ul,
-    li.focus > ul {
-      left: auto;
-    }
-  }
-
-  li {
-    position: relative;
-
-    &:hover > a,
-    &.focus > a {
-    }
-  }
-
   a {
-    display: block;
     text-decoration: none;
   }
 
-  .current_page_item > a,
-  .current-menu-item > a,
-  .current_page_ancestor > a,
-  .current-menu-ancestor > a {
+  ul {
+    // Hide navigation menu
+    display: none;
+    // Remove dot points
+    list-style: none;
+    // Remove indentation
+    padding-left: 0;
+    // Separate sections
+    margin: 1vh 0;
+
+    ul {
+      // Hide drop down menus
+      display: none;
+      margin-left: 5%;
+    }
+
+    li {
+      position: relative;
+    }
+
+    a {
+      color: black;
+    }
+
   }
 }
 
-/* Small menu. */
-.menu-toggle,
-.main-navigation.toggled ul {
+button.dropdown-toggle {
+  // Make dropdown icon be on right
+  position: absolute;
+  right: 0;
+}
+
+// Display navigation menu
+.toggled-on ul {
   display: block;
 }
 
-@media screen and (min-width: 37.5em) {
+// Display dropdowns
+.sub-menu.toggled-on {
+  display: block;
+}
 
+// Larger Devices
+@media screen and (min-width: $query__laptop) {
+
+  // Hide menu toggle button
   .menu-toggle {
     display: none;
   }
 
-  .main-navigation ul {
-    display: flex;
+  // Hide navigation dropdown
+  .dropdown-toggle {
+    display: none;
+  }
+
+
+  .main-navigation {
+    .menu-item-has-children:hover,
+    .page-item-has-children:hover {
+      ul {
+        // Display dropdown on hover
+        display: block;
+        position: absolute;
+        width: 250px;
+        background-color: white;
+        box-shadow: 0 10px 15px 0 rgba(0,0,0,0.2);
+      }
+    }
+
+    ul {
+      // Display navigation menu
+      display: flex;
+      margin: 0;
+      ul {
+        li {
+          // Add padding onto dropdown items
+          padding: 10px 2px 10px 2px;
+        }
+      }
+    }
+
+    // Add padding to all menu items
+    a {
+      padding: 14px 16px;
+    }
+
   }
 }
-
