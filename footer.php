@@ -18,7 +18,7 @@
 	</div> <!-- .back-to-top -->
 	<nav class="social-nav">
 		<!--WP nav menu linked to social menu. Seen in Customize -> Menus -> Social Media Menu-->
-		<?php wp_nav_menu(array('theme_location' => 'social')); ?>
+		<?php wp_nav_menu(array('theme_location' => 'footer-menu')); ?>
 	</nav> <!-- .social-nav -->
 	<div class="site-info">
 		<?php
