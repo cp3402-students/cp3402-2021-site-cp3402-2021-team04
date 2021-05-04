@@ -26,15 +26,15 @@
   display: flex;
   a {
     text-decoration: none;
-    z-index: 99; /* Make sure it does not overlap */
-    border: none; /* Remove borders */
-    outline: none; /* Remove outline */
-    //background-color: red; /* Set a background color */
-    color: #E5F2C9; /* Text color */
-    cursor: pointer; /* Add a mouse pointer on hover */
-    padding: .25em 1em; /* Some padding */
-    border-radius: 25px; /* Rounded corners */
-    //font-size: 18px; /* Increase font size */
+    z-index: 99; // Make sure it does not overlap
+    border: none; // Remove borders
+    outline: none; // Remove outline
+    //background-color: red; /* Set a background color
+    color: #E5F2C9; // Text color
+    cursor: pointer; // Add a mouse pointer on hover
+    padding: .25em 1em; // Some padding
+    border-radius: 25px; // Rounded corners
+    //font-size: 18px; // Increase font size
       &:hover, &:focus { // Hovering over the Social nav menu
         text-decoration: underline;
         background-color: #191516;
@@ -50,6 +50,7 @@
     list-style-type: none;
     margin: 0;
     padding: 0;
+    flex-wrap: wrap;
 
     a{ // Writing on Social nav menu
       display: block;
