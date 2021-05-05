@@ -11,18 +11,28 @@
 @mixin on-hover-border {
   a {
     text-decoration: none;
-    z-index: 99; // Make sure it does not overlap
-    border: none; // Remove borders
-    outline: none; // Remove outline
-    cursor: pointer; // Add a mouse pointer on hover
-    padding: .25em 1em; // Some padding
-    border-radius: 25px; // Rounded corners
-    //font-size: 18px; // Increase font size
-    &:hover, &:focus { // Hovering over the Social nav menu
+    outline: none;
+    cursor: pointer;
+    padding: .25em 1em;
+    border-radius: 25px;
+    &:hover, &:focus {
       text-decoration: underline;
       border-radius: 25px;
     }
   }
+}
+
+@mixin on-hover-expand{
+  .menu-item-has-children:hover,
+  .page-item-has-children:hover {
+    ul {
+      // Display dropdown on hover
+      display: block;
+      position: absolute;
+      width: 250px;
+      background-color: white;
+      box-shadow: 0 10px 15px 0 rgba(0,0,0,0.2);
+    }
 }
 
 
@@ -98,16 +108,7 @@ button.dropdown-toggle {
 
 
   .main-navigation {
-    .menu-item-has-children:hover,
-    .page-item-has-children:hover {
-      ul {
-        // Display dropdown on hover
-        display: block;
-        position: absolute;
-        width: 250px;
-        background-color: white;
-        box-shadow: 0 10px 15px 0 rgba(0,0,0,0.2);
-      }
+    @include on-hover-expand;
     }
 
     ul {
