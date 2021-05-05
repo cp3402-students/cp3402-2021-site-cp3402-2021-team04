@@ -20,8 +20,11 @@
 	grid-area: sidebar;
 }
 
-
+.site-footer {
+	grid-area: footer;
+}
 
 @import "no-sidebar";
-// Import footer.scss
-@import "../components/footer/footer.scss";
+
+// Import header
+@import "../components/header/header.scss";
