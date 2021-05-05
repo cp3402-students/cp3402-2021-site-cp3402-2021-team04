@@ -1,8 +1,37 @@
 // Mobile Styling
+// Menu toggle Mixin to adhere to DRY.
+@mixin display-toggle-menu-dropdown {
+  display: block;
+}
+
+@mixin hide-toggle-menu-dropdown{
+  display: none;
+}
+// Mixin could be combine with footer to adhere to DRY Principle and not repeat the same hover border twice.
+@mixin on-hover-border {
+  a {
+    text-decoration: none;
+    z-index: 99; // Make sure it does not overlap
+    border: none; // Remove borders
+    outline: none; // Remove outline
+    cursor: pointer; // Add a mouse pointer on hover
+    padding: .25em 1em; // Some padding
+    border-radius: 25px; // Rounded corners
+    //font-size: 18px; // Increase font size
+    &:hover, &:focus { // Hovering over the Social nav menu
+      text-decoration: underline;
+      border-radius: 25px;
+    }
+  }
+}
+
+
 .main-navigation {
   a {
     text-decoration: none;
   }
+
+  @include on-hover-border;
 
   ul {
     // Hide navigation menu
@@ -26,6 +55,13 @@
 
     a {
       color: black;
+      @include on-hover-border;
+      &:hover, &:focus {
+        color: white;
+        background-color: #191516;
+        border-radius: 5px;
+        padding: 12.5px;
+      }
     }
 
   }
@@ -39,12 +75,12 @@ button.dropdown-toggle {
 
 // Display navigation menu
 .toggled-on ul {
-  display: block;
+  @include display-toggle-menu-dropdown;
 }
 
 // Display dropdowns
 .sub-menu.toggled-on {
-  display: block;
+  @include display-toggle-menu-dropdown;
 }
 
 // Larger Devices
@@ -52,12 +88,12 @@ button.dropdown-toggle {
 
   // Hide menu toggle button
   .menu-toggle {
-    display: none;
+    @include hide-toggle-menu-dropdown;
   }
 
   // Hide navigation dropdown
   .dropdown-toggle {
-    display: none;
+    @include hide-toggle-menu-dropdown;
   }
 
 
@@ -91,12 +127,9 @@ button.dropdown-toggle {
         }
       }
     }
-
-
     a {
       // Add padding to all menu items
       padding: 24px 16px;
     }
-
   }
 }

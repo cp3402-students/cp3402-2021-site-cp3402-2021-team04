@@ -796,6 +796,19 @@ textarea {
 .main-navigation a {
   text-decoration: none;
 }
+.main-navigation a {
+  text-decoration: none;
+  z-index: 99;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 0.25em 1em;
+  border-radius: 25px;
+}
+.main-navigation a:hover, .main-navigation a:focus {
+  text-decoration: underline;
+  border-radius: 25px;
+}
 .main-navigation ul {
   display: none;
   list-style: none;
@@ -811,6 +824,25 @@ textarea {
 }
 .main-navigation ul a {
   color: black;
+}
+.main-navigation ul a a {
+  text-decoration: none;
+  z-index: 99;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 0.25em 1em;
+  border-radius: 25px;
+}
+.main-navigation ul a a:hover, .main-navigation ul a a:focus {
+  text-decoration: underline;
+  border-radius: 25px;
+}
+.main-navigation ul a:hover, .main-navigation ul a:focus {
+  color: white;
+  background-color: #191516;
+  border-radius: 5px;
+  padding: 12.5px;
 }
 
 button.dropdown-toggle {
@@ -997,6 +1029,19 @@ button.dropdown-toggle {
 .main-navigation a {
   text-decoration: none;
 }
+.main-navigation a {
+  text-decoration: none;
+  z-index: 99;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 0.25em 1em;
+  border-radius: 25px;
+}
+.main-navigation a:hover, .main-navigation a:focus {
+  text-decoration: underline;
+  border-radius: 25px;
+}
 .main-navigation ul {
   display: none;
   list-style: none;
@@ -1012,6 +1057,25 @@ button.dropdown-toggle {
 }
 .main-navigation ul a {
   color: black;
+}
+.main-navigation ul a a {
+  text-decoration: none;
+  z-index: 99;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 0.25em 1em;
+  border-radius: 25px;
+}
+.main-navigation ul a a:hover, .main-navigation ul a a:focus {
+  text-decoration: underline;
+  border-radius: 25px;
+}
+.main-navigation ul a:hover, .main-navigation ul a:focus {
+  color: white;
+  background-color: #191516;
+  border-radius: 5px;
+  padding: 12.5px;
 }
 
 button.dropdown-toggle {
@@ -1228,6 +1292,19 @@ button.dropdown-toggle {
 .main-navigation a {
   text-decoration: none;
 }
+.main-navigation a {
+  text-decoration: none;
+  z-index: 99;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 0.25em 1em;
+  border-radius: 25px;
+}
+.main-navigation a:hover, .main-navigation a:focus {
+  text-decoration: underline;
+  border-radius: 25px;
+}
 .main-navigation ul {
   display: none;
   list-style: none;
@@ -1243,6 +1320,25 @@ button.dropdown-toggle {
 }
 .main-navigation ul a {
   color: black;
+}
+.main-navigation ul a a {
+  text-decoration: none;
+  z-index: 99;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 0.25em 1em;
+  border-radius: 25px;
+}
+.main-navigation ul a a:hover, .main-navigation ul a a:focus {
+  text-decoration: underline;
+  border-radius: 25px;
+}
+.main-navigation ul a:hover, .main-navigation ul a:focus {
+  color: white;
+  background-color: #191516;
+  border-radius: 5px;
+  padding: 12.5px;
 }
 
 button.dropdown-toggle {
@@ -1429,6 +1525,19 @@ button.dropdown-toggle {
 .main-navigation a {
   text-decoration: none;
 }
+.main-navigation a {
+  text-decoration: none;
+  z-index: 99;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 0.25em 1em;
+  border-radius: 25px;
+}
+.main-navigation a:hover, .main-navigation a:focus {
+  text-decoration: underline;
+  border-radius: 25px;
+}
 .main-navigation ul {
   display: none;
   list-style: none;
@@ -1444,6 +1553,25 @@ button.dropdown-toggle {
 }
 .main-navigation ul a {
   color: black;
+}
+.main-navigation ul a a {
+  text-decoration: none;
+  z-index: 99;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 0.25em 1em;
+  border-radius: 25px;
+}
+.main-navigation ul a a:hover, .main-navigation ul a a:focus {
+  text-decoration: underline;
+  border-radius: 25px;
+}
+.main-navigation ul a:hover, .main-navigation ul a:focus {
+  color: white;
+  background-color: #191516;
+  border-radius: 5px;
+  padding: 12.5px;
 }
 
 button.dropdown-toggle {
