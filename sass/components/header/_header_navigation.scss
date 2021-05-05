@@ -98,29 +98,23 @@ button.dropdown-toggle {
 
 
   .main-navigation {
+    .menu-item-has-children:hover,
+    .page-item-has-children:hover {
+      ul {
+        // Display dropdown on hover
+        display: block;
+        position: absolute;
+        width: 250px;
+        background-color: white;
+        box-shadow: 0 10px 15px 0 rgba(0,0,0,0.2);
+      }
+    }
 
     ul {
-
-      .menu-item-has-children:hover,
-      .page-item-has-children:hover {
-        ul {
-          // Display dropdown on hover
-          display: block;
-          position: absolute;
-          width: 250px;
-          background-color: white;
-          box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.2);
-        }
-      }
-
       // Display navigation menu
       display: flex;
       margin: 0;
-
       ul {
-        // Style each layer of dropdown menus
-        margin: 20px 0 0 1.5%;
-
         li {
           // Add padding onto dropdown items
           padding: 10px 2px 10px 2px;
