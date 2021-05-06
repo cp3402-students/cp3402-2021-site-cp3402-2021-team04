@@ -1,3 +1,35 @@
+@mixin display-next-level {
+  $sel: '';
+  @for $i from 1 through 10 {
+    $sel: if($i == 1, "ul", selector-nest($sel, "ul"));
+
+    #{$sel} {
+      // On hover expand
+      li:hover {
+        background: transparent;
+
+        // Show next level
+        ul {
+          display: block;
+          margin-left: 5%;
+          box-shadow: none;
+          position: relative;
+          width: 100%;
+          padding-bottom: 0;
+
+          li {
+            padding-top: 5px;
+          }
+
+          ul { // Hide next level onwards
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+
 // Mobile Styling
 .main-navigation {
   a {
@@ -62,40 +94,38 @@ button.dropdown-toggle {
 
 
   .main-navigation {
-
     ul {
-
-      .menu-item-has-children:hover,
-      .page-item-has-children:hover {
-        ul {
-          // Display dropdown on hover
-          display: block;
-          position: absolute;
-          width: 250px;
-          background-color: white;
-          box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.2);
-        }
-      }
-
-      // Display navigation menu
+      // Show main nav
       display: flex;
-      margin: 0;
 
-      ul {
-        // Style each layer of dropdown menus
-        margin: 20px 0 0 1.5%;
+      a {
+        padding: 14px 16px;
+      }
 
-        li {
-          // Add padding onto dropdown items
-          padding: 10px 2px 10px 2px;
+      // On hover top level menu item
+      li:hover {
+        background: $color__background-header;
+
+        ul { // Show level 1
+          display: block;
+          padding: 5px 5px 0 5px;
+          position: relative;
+          width: 100%;
+          top: 0;
+
+          li {
+            padding-top: 8px;
+            width: max-content;
+          }
+
+          ul { // Hide level 2 onwards
+            display: none;
+          }
         }
       }
-    }
 
-    // Add padding to all menu items
-    a {
-      padding: 14px 16px;
+      // Add 10 layers of menu formatting
+      @include display-next-level;
     }
-
   }
 }
