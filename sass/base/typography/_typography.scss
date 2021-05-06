@@ -1,13 +1,7 @@
 body, button, input, select, optgroup, textarea {
   color: $color__text-main;
   font-family: $font__serif;
-  @include font-size(.8);
   line-height: $font__line-height-body;
-
-  // Set font-size to be slightly larger on larger displays
-  @media screen and (min-width: $query__small) {
-    @include font-size(1);
-  }
 }
 
 @import "headings";

@@ -9,5 +9,9 @@
 			"footer";
 	}
 }
-// Import footer.scss
+
+// Import header
+@import "../components/header/header.scss";
+
+// Import footer
 @import "../components/footer/footer.scss";

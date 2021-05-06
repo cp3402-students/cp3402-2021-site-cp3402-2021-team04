@@ -6,14 +6,15 @@
   padding: 1em;
   text-align: center;
   display: inline-block;
+  width: 100%;
 }
 
 .back-to-top , .social-nav, .site-info {
   width: 33%;
   float:left;
 
-  // Gets screen width and if width is < query__medium stacks them instead of length ways
-  @media screen and (max-width: $query__medium) {
+   //Gets screen width and if width is < query__medium stacks them instead of length ways
+  @media screen and (max-width: 900px) {
     float:none;
     width: 100%;
   }
