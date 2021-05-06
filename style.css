@@ -1074,15 +1074,16 @@ button.dropdown-toggle {
   z-index: 99;
   border: none;
   outline: none;
-  color: #E5F2C9;
+  color: #ffffff;
   cursor: pointer;
-  padding: 0.25em 1em;
+  padding: 12.5px 16px;
   border-radius: 25px;
 }
 .back-to-top a:hover, .back-to-top a:focus {
   text-decoration: underline;
+  color: white;
   background-color: #191516;
-  border-radius: 25px;
+  border-radius: 5px;
 }
 
 .social-nav ul {
@@ -1095,14 +1096,15 @@ button.dropdown-toggle {
 }
 .social-nav ul a {
   display: block;
-  padding: 0.25em 1em;
-  color: #E5F2C9;
+  padding: 12.5px 16px;
+  color: #ffffff;
   text-decoration: none;
 }
 .social-nav ul a:hover, .social-nav ul a:focus {
   text-decoration: underline;
+  color: white;
   background-color: #191516;
-  border-radius: 25px;
+  border-radius: 5px;
 }
 
 .header-image {
@@ -1523,15 +1525,16 @@ button.dropdown-toggle {
   z-index: 99;
   border: none;
   outline: none;
-  color: #E5F2C9;
+  color: #ffffff;
   cursor: pointer;
-  padding: 0.25em 1em;
+  padding: 12.5px 16px;
   border-radius: 25px;
 }
 .back-to-top a:hover, .back-to-top a:focus {
   text-decoration: underline;
+  color: white;
   background-color: #191516;
-  border-radius: 25px;
+  border-radius: 5px;
 }
 
 .social-nav ul {
@@ -1544,14 +1547,15 @@ button.dropdown-toggle {
 }
 .social-nav ul a {
   display: block;
-  padding: 0.25em 1em;
-  color: #E5F2C9;
+  padding: 12.5px 16px;
+  color: #ffffff;
   text-decoration: none;
 }
 .social-nav ul a:hover, .social-nav ul a:focus {
   text-decoration: underline;
+  color: white;
   background-color: #191516;
-  border-radius: 25px;
+  border-radius: 5px;
 }
 
 .site {
@@ -2002,15 +2006,16 @@ button.dropdown-toggle {
   z-index: 99;
   border: none;
   outline: none;
-  color: #E5F2C9;
+  color: #ffffff;
   cursor: pointer;
-  padding: 0.25em 1em;
+  padding: 12.5px 16px;
   border-radius: 25px;
 }
 .back-to-top a:hover, .back-to-top a:focus {
   text-decoration: underline;
+  color: white;
   background-color: #191516;
-  border-radius: 25px;
+  border-radius: 5px;
 }
 
 .social-nav ul {
@@ -2023,14 +2028,15 @@ button.dropdown-toggle {
 }
 .social-nav ul a {
   display: block;
-  padding: 0.25em 1em;
-  color: #E5F2C9;
+  padding: 12.5px 16px;
+  color: #ffffff;
   text-decoration: none;
 }
 .social-nav ul a:hover, .social-nav ul a:focus {
   text-decoration: underline;
+  color: white;
   background-color: #191516;
-  border-radius: 25px;
+  border-radius: 5px;
 }
 
 .header-image {
@@ -2451,15 +2457,16 @@ button.dropdown-toggle {
   z-index: 99;
   border: none;
   outline: none;
-  color: #E5F2C9;
+  color: #ffffff;
   cursor: pointer;
-  padding: 0.25em 1em;
+  padding: 12.5px 16px;
   border-radius: 25px;
 }
 .back-to-top a:hover, .back-to-top a:focus {
   text-decoration: underline;
+  color: white;
   background-color: #191516;
-  border-radius: 25px;
+  border-radius: 5px;
 }
 
 .social-nav ul {
@@ -2472,14 +2479,15 @@ button.dropdown-toggle {
 }
 .social-nav ul a {
   display: block;
-  padding: 0.25em 1em;
-  color: #E5F2C9;
+  padding: 12.5px 16px;
+  color: #ffffff;
   text-decoration: none;
 }
 .social-nav ul a:hover, .social-nav ul a:focus {
   text-decoration: underline;
+  color: white;
   background-color: #191516;
-  border-radius: 25px;
+  border-radius: 5px;
 }
 
 /*--------------------------------------------------------------

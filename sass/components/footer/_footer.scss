@@ -2,49 +2,51 @@
 .site-footer {
   grid-area: footer;
   background-color: slategrey;
-  color:white;
+  color: white;
   padding: 1em;
   text-align: center;
   display: inline-block;
   width: 100%;
 }
 
-.back-to-top , .social-nav, .site-info {
+.back-to-top, .social-nav, .site-info {
   width: 33%;
-  float:left;
+  float: left;
 
-   //Gets screen width and if width is < query__medium stacks them instead of length ways
+  //Gets screen width and if width is < query__medium stacks them instead of length ways
   @media screen and (max-width: 900px) {
-    float:none;
+    float: none;
     width: 100%;
   }
 }
 
-.back-to-top{
+.back-to-top {
   margin: 0;
   padding: 0;
   justify-content: center;
   display: flex;
+
   a {
     text-decoration: none;
     z-index: 99; // Make sure it does not overlap
     border: none; // Remove borders
     outline: none; // Remove outline
     //background-color: red; /* Set a background color
-    color: #E5F2C9; // Text color
+    color: $color__text-white; // Text color
     cursor: pointer; // Add a mouse pointer on hover
-    padding: .25em 1em; // Some padding
+    padding: 12.5px 16px;
     border-radius: 25px; // Rounded corners
     //font-size: 18px; // Increase font size
-      &:hover, &:focus { // Hovering over the Social nav menu
-        text-decoration: underline;
-        background-color: #191516;
-        border-radius: 25px;
-      }
+    &:hover, &:focus {
+      text-decoration: underline;
+      color: white;
+      background-color: #191516;
+      border-radius: 5px;
+    }
   }
 }
 
-.social-nav{
+.social-nav {
   ul { // Social Nav Menu
     display: flex;
     justify-content: center;
@@ -53,23 +55,21 @@
     padding: 0;
     flex-wrap: wrap;
 
-    a{ // Writing on Social nav menu
+    a { // Writing on Social nav menu
       display: block;
-      padding: .25em 1em;
-      color: #E5F2C9;
+      padding: 12.5px 16px;
+      color: $color__text-white;
       text-decoration: none;
 
-      &:hover, &:focus { // Hovering over the Social nav menu
+      &:hover, &:focus {
         text-decoration: underline;
+        color: white;
         background-color: #191516;
-        border-radius: 25px;
-
+        border-radius: 5px;
       }
-
     }
-
   }
 }
 
-.site-info{
+.site-info {
 }
