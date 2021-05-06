@@ -1049,13 +1049,14 @@ button.dropdown-toggle {
   padding: 1em;
   text-align: center;
   display: inline-block;
+  width: 100%;
 }
 
 .back-to-top, .social-nav, .site-info {
   width: 33%;
   float: left;
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 900px) {
   .back-to-top, .social-nav, .site-info {
     float: none;
     width: 100%;
@@ -1497,13 +1498,14 @@ button.dropdown-toggle {
   padding: 1em;
   text-align: center;
   display: inline-block;
+  width: 100%;
 }
 
 .back-to-top, .social-nav, .site-info {
   width: 33%;
   float: left;
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 900px) {
   .back-to-top, .social-nav, .site-info {
     float: none;
     width: 100%;
@@ -1975,13 +1977,14 @@ button.dropdown-toggle {
   padding: 1em;
   text-align: center;
   display: inline-block;
+  width: 100%;
 }
 
 .back-to-top, .social-nav, .site-info {
   width: 33%;
   float: left;
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 900px) {
   .back-to-top, .social-nav, .site-info {
     float: none;
     width: 100%;
@@ -2423,13 +2426,14 @@ button.dropdown-toggle {
   padding: 1em;
   text-align: center;
   display: inline-block;
+  width: 100%;
 }
 
 .back-to-top, .social-nav, .site-info {
   width: 33%;
   float: left;
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 900px) {
   .back-to-top, .social-nav, .site-info {
     float: none;
     width: 100%;

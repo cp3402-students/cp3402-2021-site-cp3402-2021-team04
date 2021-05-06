@@ -52,6 +52,7 @@ if (!function_exists('jazzclubtownsville_setup')) :
 		register_nav_menus(
 			array(
 				'menu-1' => esc_html__('Primary', 'jazzclubtownsville'),
+				'footer-menu' => esc_html( 'Footer Menu', 'jazzclubtownsville' ),
 			)
 		);
 
