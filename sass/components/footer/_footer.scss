@@ -13,7 +13,7 @@
   float:left;
 
   // Gets screen width and if width is < query__medium stacks them instead of length ways
-  @media screen and (max-width: $query__medium) {
+  @media screen and (max-width: $query__laptop) {
     float:none;
     width: 100%;
   }
