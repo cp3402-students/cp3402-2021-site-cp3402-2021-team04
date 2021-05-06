@@ -56,8 +56,8 @@
       position: relative;
     }
 
-    a {
-      color: black;
+    a{
+      color:black;
     }
 
   }
@@ -99,7 +99,20 @@ button.dropdown-toggle {
       display: flex;
 
       a {
-        padding: 14px 16px;
+        text-decoration: none;
+        z-index: 99;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: .25em 1em;
+        border-radius: 25px;
+        &:hover, &:focus {
+          text-decoration: underline;
+          color: white;
+          background-color: #191516;
+          border-radius: 5px;
+          padding: 12.5px 16px;
+        }
       }
 
       // On hover top level menu item

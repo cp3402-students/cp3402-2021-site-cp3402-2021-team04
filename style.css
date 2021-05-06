@@ -839,7 +839,20 @@ button.dropdown-toggle {
     display: flex;
   }
   .main-navigation ul a {
-    padding: 14px 16px;
+    text-decoration: none;
+    z-index: 99;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 0.25em 1em;
+    border-radius: 25px;
+  }
+  .main-navigation ul a:hover, .main-navigation ul a:focus {
+    text-decoration: underline;
+    color: white;
+    background-color: #191516;
+    border-radius: 5px;
+    padding: 12.5px 16px;
   }
   .main-navigation ul li:hover {
     background: #dfb301;
@@ -1212,7 +1225,20 @@ button.dropdown-toggle {
     display: flex;
   }
   .main-navigation ul a {
-    padding: 14px 16px;
+    text-decoration: none;
+    z-index: 99;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 0.25em 1em;
+    border-radius: 25px;
+  }
+  .main-navigation ul a:hover, .main-navigation ul a:focus {
+    text-decoration: underline;
+    color: white;
+    background-color: #191516;
+    border-radius: 5px;
+    padding: 12.5px 16px;
   }
   .main-navigation ul li:hover {
     background: #dfb301;
@@ -1615,7 +1641,20 @@ button.dropdown-toggle {
     display: flex;
   }
   .main-navigation ul a {
-    padding: 14px 16px;
+    text-decoration: none;
+    z-index: 99;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 0.25em 1em;
+    border-radius: 25px;
+  }
+  .main-navigation ul a:hover, .main-navigation ul a:focus {
+    text-decoration: underline;
+    color: white;
+    background-color: #191516;
+    border-radius: 5px;
+    padding: 12.5px 16px;
   }
   .main-navigation ul li:hover {
     background: #dfb301;
@@ -1988,7 +2027,20 @@ button.dropdown-toggle {
     display: flex;
   }
   .main-navigation ul a {
-    padding: 14px 16px;
+    text-decoration: none;
+    z-index: 99;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 0.25em 1em;
+    border-radius: 25px;
+  }
+  .main-navigation ul a:hover, .main-navigation ul a:focus {
+    text-decoration: underline;
+    color: white;
+    background-color: #191516;
+    border-radius: 5px;
+    padding: 12.5px 16px;
   }
   .main-navigation ul li:hover {
     background: #dfb301;
