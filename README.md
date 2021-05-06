@@ -25,3 +25,14 @@ requires the following dependencies:
 - [Composer](https://getcomposer.org/)
 
 [Production Wordpress Site](http://ec2-3-104-76-166.ap-southeast-2.compute.amazonaws.com/townsville_jazz/)
+
+## Footer Social Menu
+
+To set up footer social menu follow these steps:
+
+1. Log into WordPress admin
+2. Hover over appearance on the left side column and press customize
+3. Press Menus on the left side column
+4. Select your Social Media Menu or create a new one with the "Create new menu button"
+5. Find the Menu Locations tab on the left and set to Social Media Menu
+6. Press Publish in the top left hand of your screen. Exit the admin and to test scroll to the footer to see if your social media icons are there.
