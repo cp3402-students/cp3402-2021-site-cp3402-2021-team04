@@ -2,5 +2,13 @@ $size__site-main: 100%;
 $size__site-sidebar: 25%;
 
 // Add media query constants
-$query__small: 600px;
-$query__medium: 900px;
+$query__mobile-s: 320px;
+$query__mobile-m: 375px;
+$query__mobile-l: 425px;
+$query__tablet-s: 525px;
+$query__tablet: 768px;
+$query__laptop: 1024px;
+$query__laptop-l: 1440px;
+$query__4k: 2560px;
+
+$size__site-branding-height: 125px;

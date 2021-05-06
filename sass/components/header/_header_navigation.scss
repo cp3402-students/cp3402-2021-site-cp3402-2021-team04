@@ -1,0 +1,144 @@
+@mixin display-next-level {
+  $sel: '';
+  @for $i from 1 through 10 {
+    $sel: if($i == 1, "ul", selector-nest($sel, "ul"));
+
+    #{$sel} {
+      // On hover expand
+      li:hover {
+        background: transparent;
+
+        // Show next level
+        ul {
+          display: block;
+          margin-left: 5%;
+          box-shadow: none;
+          position: relative;
+          width: 100%;
+          padding-bottom: 0;
+
+          li {
+            padding-top: 5px;
+          }
+
+          ul { // Hide next level onwards
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Mobile Styling
+.main-navigation {
+  a {
+    text-decoration: none;
+  }
+
+  ul {
+    // Hide navigation menu
+    display: none;
+    // Remove dot points
+    list-style: none;
+    // Remove indentation
+    padding-left: 0;
+    // Separate sections
+    margin: 1vh 0;
+
+    ul {
+      // Hide drop down menus
+      display: none;
+      margin-left: 5%;
+    }
+
+    li {
+      position: relative;
+    }
+
+    a{
+      color:black;
+    }
+
+  }
+}
+
+button.dropdown-toggle {
+  // Make dropdown icon be on right
+  position: absolute;
+  right: 0;
+}
+
+// Display navigation menu
+.toggled-on ul {
+  display: block;
+}
+
+// Display dropdowns
+.sub-menu.toggled-on {
+  display: block;
+}
+
+// Larger Devices
+@media screen and (min-width: $query__laptop) {
+
+  // Hide menu toggle button
+  .menu-toggle {
+    display: none;
+  }
+
+  // Hide navigation dropdown
+  .dropdown-toggle {
+    display: none;
+  }
+
+
+  .main-navigation {
+    ul {
+      // Show main nav
+      display: flex;
+
+      a {
+        text-decoration: none;
+        z-index: 99;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: .25em 1em;
+        border-radius: 25px;
+        &:hover, &:focus {
+          text-decoration: underline;
+          color: white;
+          background-color: #191516;
+          border-radius: 5px;
+          padding: 12.5px 16px;
+        }
+      }
+
+      // On hover top level menu item
+      li:hover {
+        background: $color__background-header;
+
+        ul { // Show level 1
+          display: block;
+          padding: 5px 5px 0 5px;
+          position: relative;
+          width: 100%;
+          top: 0;
+
+          li {
+            padding-top: 8px;
+            width: max-content;
+          }
+
+          ul { // Hide level 2 onwards
+            display: none;
+          }
+        }
+      }
+
+      // Add 10 layers of menu formatting
+      @include display-next-level;
+    }
+  }
+}

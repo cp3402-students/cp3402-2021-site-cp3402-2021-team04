@@ -1,99 +1,104 @@
+/* global jazzclubtownsvilleScreenReaderText */
 /**
- * File navigation.js.
- *
- * Handles toggling the navigation menu for small screens and enables TAB key
- * navigation support for dropdown menus.
+ * Theme functions file.
+ * Modified version of the twentyseventeen theme
+ * Contains handlers for navigation and widget area.
  */
-( function() {
-	const siteNavigation = document.getElementById( 'site-navigation' );
 
-	// Return early if the navigation don't exist.
-	if ( ! siteNavigation ) {
-		return;
-	}
+(function ($) {
+  var masthead, menuToggle, siteNavContain, siteNavigation;
 
-	const button = siteNavigation.getElementsByTagName( 'button' )[ 0 ];
+  function initMainNavigation(container) {
 
-	// Return early if the button don't exist.
-	if ( 'undefined' === typeof button ) {
-		return;
-	}
+    // Add dropdown toggle that displays child menu items.
+    var dropdownToggle = $('<button />', {'class': 'dropdown-toggle', 'aria-expanded': false})
+      .append($('<span />', {'class': 'dropdown-icon', text: '▾'}))
+      .append($('<span />', {'class': 'screen-reader-text', text: jazzclubtownsvilleScreenReaderText.expand}));
 
-	const menu = siteNavigation.getElementsByTagName( 'ul' )[ 0 ];
+    // Append dropdown-toggle to dropdown items
+    container.find('.menu-item-has-children > a, .page_item_has_children > a').after(dropdownToggle);
 
-	// Hide menu toggle button if menu is empty and return early.
-	if ( 'undefined' === typeof menu ) {
-		button.style.display = 'none';
-		return;
-	}
+    // Handle click of the dropdown toggle
+    container.find('.dropdown-toggle').on('click', function (e) {
+      var _this = $(this),
+        screenReaderSpan = _this.find('.screen-reader-text');
+      dropdownIcon = _this.find('.dropdown-icon');
 
-	if ( ! menu.classList.contains( 'nav-menu' ) ) {
-		menu.classList.add( 'nav-menu' );
-	}
+      e.preventDefault();
+      _this.toggleClass('toggled-on');
+      _this.next('.children, .sub-menu').toggleClass('toggled-on');
 
-	// Toggle the .toggled class and the aria-expanded value each time the button is clicked.
-	button.addEventListener( 'click', function() {
-		siteNavigation.classList.toggle( 'toggled' );
+      _this.attr('aria-expanded', _this.attr('aria-expanded') === 'false' ? 'true' : 'false');
 
-		if ( button.getAttribute( 'aria-expanded' ) === 'true' ) {
-			button.setAttribute( 'aria-expanded', 'false' );
-		} else {
-			button.setAttribute( 'aria-expanded', 'true' );
-		}
-	} );
+      screenReaderSpan.text(screenReaderSpan.text() === jazzclubtownsvilleScreenReaderText.expand ? jazzclubtownsvilleScreenReaderText.collapse : jazzclubtownsvilleScreenReaderText.expand);
+      dropdownIcon.text(dropdownIcon.text() === '▴' ? '▾' : '▴');
+    });
+  }
 
-	// Remove the .toggled class and set aria-expanded to false when the user clicks outside the navigation.
-	document.addEventListener( 'click', function( event ) {
-		const isClickInside = siteNavigation.contains( event.target );
+  initMainNavigation($('.main-navigation'));
 
-		if ( ! isClickInside ) {
-			siteNavigation.classList.remove( 'toggled' );
-			button.setAttribute( 'aria-expanded', 'false' );
-		}
-	} );
+  masthead = $('#masthead');
+  menuToggle = masthead.find('.menu-toggle');
+  siteNavContain = masthead.find('.main-navigation');
+  siteNavigation = masthead.find('.main-navigation > div > ul');
 
-	// Get all the link elements within the menu.
-	const links = menu.getElementsByTagName( 'a' );
+  // Enable menuToggle.
+  (function () {
 
-	// Get all the link elements with children within the menu.
-	const linksWithChildren = menu.querySelectorAll( '.menu-item-has-children > a, .page_item_has_children > a' );
+    // Return early if menuToggle is missing.
+    if (!menuToggle.length) {
+      return;
+    }
 
-	// Toggle focus each time a menu link is focused or blurred.
-	for ( const link of links ) {
-		link.addEventListener( 'focus', toggleFocus, true );
-		link.addEventListener( 'blur', toggleFocus, true );
-	}
+    // Add an initial value for the attribute.
+    menuToggle.attr('aria-expanded', 'false');
 
-	// Toggle focus each time a menu link with children receive a touch event.
-	for ( const link of linksWithChildren ) {
-		link.addEventListener( 'touchstart', toggleFocus, false );
-	}
+    menuToggle.on('click.jazzclubtownsville', function () {
+      siteNavContain.toggleClass('toggled-on');
 
-	/**
-	 * Sets or removes .focus class on an element.
-	 */
-	function toggleFocus() {
-		if ( event.type === 'focus' || event.type === 'blur' ) {
-			let self = this;
-			// Move up through the ancestors of the current link until we hit .nav-menu.
-			while ( ! self.classList.contains( 'nav-menu' ) ) {
-				// On li elements toggle the class .focus.
-				if ( 'li' === self.tagName.toLowerCase() ) {
-					self.classList.toggle( 'focus' );
-				}
-				self = self.parentNode;
-			}
-		}
+      $(this).attr('aria-expanded', siteNavContain.hasClass('toggled-on'));
+    });
+  })();
 
-		if ( event.type === 'touchstart' ) {
-			const menuItem = this.parentNode;
-			event.preventDefault();
-			for ( const link of menuItem.parentNode.children ) {
-				if ( menuItem !== link ) {
-					link.classList.remove( 'focus' );
-				}
-			}
-			menuItem.classList.toggle( 'focus' );
-		}
-	}
-}() );
+  // Fix sub-menus for touch devices and better focus for hidden submenu items for accessibility.
+  (function () {
+    if (!siteNavigation.length || !siteNavigation.children().length) {
+      return;
+    }
+
+    // Toggle `focus` class to allow submenu access on tablets.
+    function toggleFocusClassTouchScreen() {
+      if ('none' === $('.menu-toggle').css('display')) {
+
+        $(document.body).on('touchstart.jazzclubtownsville', function (e) {
+          if (!$(e.target).closest('.main-navigation li').length) {
+            $('.main-navigation li').removeClass('focus');
+          }
+        });
+
+        siteNavigation.find('.menu-item-has-children > a, .page_item_has_children > a')
+          .on('touchstart.jazzclubtownsville', function (e) {
+            var el = $(this).parent('li');
+
+            if (!el.hasClass('focus')) {
+              e.preventDefault();
+              el.toggleClass('focus');
+              el.siblings('.focus').removeClass('focus');
+            }
+          });
+
+      } else {
+        siteNavigation.find('.menu-item-has-children > a, .page_item_has_children > a').unbind('touchstart.jazzclubtownsville');
+      }
+    }
+
+    if ('ontouchstart' in window) {
+      $(window).on('resize.jazzclubtownsville', toggleFocusClassTouchScreen);
+      toggleFocusClassTouchScreen();
+    }
+
+    siteNavigation.find('a').on('focus.jazzclubtownsville blur.jazzclubtownsville', function () {
+      $(this).parents('.menu-item, .page_item').toggleClass('focus');
+    });
+  })();
+})(jQuery);
