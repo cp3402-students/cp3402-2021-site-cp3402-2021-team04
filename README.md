@@ -11,4 +11,5 @@
     <br/>
     <br/>
     <a href="#">Deployment Details</a> · <a href="#">Site Details</a> · <a href="#">Theme Details</a>
+  </p>
 </div>
