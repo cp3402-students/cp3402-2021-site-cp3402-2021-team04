@@ -4,6 +4,9 @@
     </a>
 
 <h1>Deployment Details</h1>
+  <p>
+    <a href="#">Home Page</a> · <a href="#">Site Details</a> · <a href="#">Theme Details</a>
+  </p>
 </div>
 <hr/>
 
