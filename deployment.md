@@ -81,3 +81,77 @@
         </ul>
     </li>
 </ul>
+
+<h2>Getting Setup to Contribute</h2>
+<p>Before proceeding with setup please ensure you have read and understood "<b>Our Git Flow</b>".</p>
+
+<h3>Knowledge Pre-requisite</h3>
+<ul>
+    <li>HTML</li>
+    <li>CSS/SCSS</li>
+    <li>PHP</li>
+    <li>Git & Github</li>
+    <li>Javascript</li>
+    <li>WordPress
+        <ul>
+            <li>Localhost setup using <a href="https://varyingvagrantvagrants.org/">VVV</a> and <a href="https://www.vagrantup.com/">Vagrant</a></li>
+            <li>Working With Themes and Plugins in WordPress</li>
+            <li>Working with the WordPress front-end and back-end</li>
+            <li>Working with content in WordPress</li>
+        </ul>
+    </li>
+</ul>
+
+<h3>Dependencies</h3>
+<ul>
+    <li><a href="https://nodejs.org/">Node.js</a></li>
+    <li><a href="https://getcomposer.org/">Composer</a></li>
+    <li><a href="https://git-scm.com/">Git</a></li>
+    <li><a href="https://www.vagrantup.com/">Vagrant</a></li>
+    <li><a href="https://www.virtualbox.org/">VirtualBox</a></li>
+</ul>
+
+<h3>Installation</h3>
+<p>Run the following commands in a terminal with administrative permissions:</p>
+<ul>
+    <li><code>$ npm install</code></li>
+    <li><code>$ composer install</code></li>
+    <li><code>$ npm install -g sass</code></li>
+    <li><code>$ npm install --global less</code></li>
+</ul>
+
+<h3>Add jazztownsville.test to localhost</h3>
+<ul>
+    <p>The following tutorial assumes you already have Vagrant and VVV installed and configured</p>
+        <li>In a terminal navigate to the directory where you cloned and setup VVV.</li>
+        <li>Navigate to <code>{VVV Directory}\config\</code>.</li>
+        <li>Open <code>config.yml</code>.</li>
+        <li>Add the following below the existing WordPress Sites.
+<pre><code>
+Townsville-Jazz:
+  repo: https://github.com/Varying-Vagrant-Vagrants/custom-site-template.git
+  hosts:
+    - jazztownsville.test
+</code></pre>
+    </li>
+    <li>Save and re-run Vagrant utilising the <code>--provision</code>tag.</li>
+</ul>
+
+<h3>Clone Jazzify files</h3>
+<ul>
+    <li>Navigate to {wp-content}\themes in a terminal</li>
+    <li>Run <code>git clone https://github.com/cp3402-students/cp3402-2021-site-cp3402-2021-team04 jazzify</code></li>
+</ul>
+
+<h3>Setup File Watcher</h3>
+<p>The following tutorial outlines how to setup a file watcher to work with Jazzify in PHPStorm</p>
+<ul>
+    <li>Navigate to <code>File -> Settings -> Tools -> File Watchers</code></li>
+    <li>Select "<b>+</b>" and select "<b>SCSS</b>"</li>
+    <li>Untick "<b>Track only root files</b>"</li>
+    <li>Update the "<b>Program</b>" field to <code>C:\Users\usr\AppData\Roaming\npm\sass</code></li>
+    <li>Update the "<b>Program</b>" field to <code>$FileName$:../$FileNameWithoutExtension$.css</code></li>
+    <li>Update the "<b>Output Path</b>" field to <code>../$FileNameWithoutExtension$.css:$FileNameWithoutExtension$.css.map</code></li>
+    <li>Under "<b>Advanceed Options</b>" tick "<b>Trigger the watcher regardless of syntax errors</b>".</li>
+    <li>Click "<b>Apply</b>".</li>
+</ul>
