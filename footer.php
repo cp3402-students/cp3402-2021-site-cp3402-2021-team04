@@ -13,7 +13,7 @@
 
 <footer id="colophon" class="site-footer">
 	<div class="back-to-top">
-		<a href="">Back to top</a>
+		<a href="#">Back to top</a>
 
 	</div> <!-- .back-to-top -->
 	<nav class="social-nav">
