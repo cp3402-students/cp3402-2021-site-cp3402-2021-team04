@@ -54,3 +54,14 @@
     <li>Font has been specified for the whole website, do not import new fonts.</li>
     <li>The theme must be mobile friendly with a clear and intuitive layout.</li>
 </ul>
+
+<h2>TO-DO</h2>
+<p>The following are areas of the theme which are yet to be completed:</p>
+<ol>
+    <li>404 Page Layout</li>
+    <li>Single Post Template</li>
+    <li>Widget Layouts</li>
+    <li>Sidebar Styling</li>
+    <li>Customizer integration</li>
+    <li>Theme Featured Image</li>
+</ol>
