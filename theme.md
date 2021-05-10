@@ -43,3 +43,14 @@
     <li>The right column contains copyright details for Jazzify.</li>
     <li>On screens smaller than a tablet (Google specified sizes) the columns are stacked as rows.</li>
 </ul>
+
+<h2>Guideline</h2>
+<p>Things to know if you are looking to contribute to the theme's development:</p>
+<ul>
+    <li>Jazzify styling is written in Scss and compiled into scss using a FileWatcher.</li>
+    <li>The style sheets are split up into separate files for different elements.</li>
+    <li>Theme styling components are imported into style.scss from their respective folders.</li>
+    <li>The theme is using dark greys and yellows as the primary colours.</li>
+    <li>Font has been specified for the whole website, do not import new fonts.</li>
+    <li>The theme must be mobile friendly with a clear and intuitive layout.</li>
+</ul>
