@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package JazzClubTownsville
+ * @package Jazzify
  */
 
 ?>
@@ -14,7 +14,7 @@
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 	</header><!-- .entry-header -->
 
-	<?php jazzclubtownsville_post_thumbnail(); ?>
+	<?php jazzify_post_thumbnail(); ?>
 
 	<div class="entry-content">
 		<?php
@@ -22,7 +22,7 @@
 
 		wp_link_pages(
 			array(
-				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'jazzclubtownsville' ),
+				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'jazzify' ),
 				'after'  => '</div>',
 			)
 		);
@@ -36,7 +36,7 @@
 				sprintf(
 					wp_kses(
 						/* translators: %s: Name of current post. Only visible to screen readers */
-						__( 'Edit <span class="screen-reader-text">%s</span>', 'jazzclubtownsville' ),
+						__( 'Edit <span class="screen-reader-text">%s</span>', 'jazzify' ),
 						array(
 							'span' => array(
 								'class' => array(),
