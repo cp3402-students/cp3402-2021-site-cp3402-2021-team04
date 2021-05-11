@@ -3,8 +3,9 @@
 }
 
 .widget {
-	margin: 0 0 1.5em;
-  padding: 0 0 1.5em;
+  //spacing between each set of widgets on sidebar
+	margin: 0 0 1em;
+  padding: 0 0 2em;
   font-family: $font__sans;
 
   ul,
@@ -34,7 +35,8 @@
 
     &:hover,
     &:focus{
-      border-bottom: 3px solid #dfb301;
+      border-bottom: 3px solid black;
+      //$color__REPLACE_ME: #HEX; - to replace "black"
     }
   }
 
@@ -44,7 +46,7 @@
     height: 2em;
     padding: 10px;
     font-family: $font__sans;
-    border: 1px solid #dfb301;
+    border: 1px solid yellow;
 	}
 }
 
