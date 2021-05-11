@@ -6,7 +6,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package Jazzify
+ * @package JazzClubTownsville
  */
 
 ?>
@@ -23,7 +23,7 @@
 	<div class="site-info">
 		<?php
 
-		printf(esc_html__('Theme: %1$s %2$s.', 'jazzify'), '&copy;', '<a href="https://github.com/cp3402-students/cp3402-2021-site-cp3402-2021-team04">Team 04</a>');
+		printf(esc_html__('Theme: %1$s %2$s.', 'jazzclubtownsville'), '&copy;', '<a href="https://github.com/cp3402-students/cp3402-2021-site-cp3402-2021-team04">Team 04</a>');
 		?>
 	</div><!-- .site-info -->
 

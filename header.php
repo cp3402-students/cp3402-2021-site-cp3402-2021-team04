@@ -6,7 +6,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package Jazzify
+ * @package JazzClubTownsville
  */
 
 ?>
@@ -24,7 +24,7 @@
 <?php wp_body_open(); ?>
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text"
-	   href="#primary"><?php esc_html_e('Skip to content', 'jazzify'); ?></a>
+	   href="#primary"><?php esc_html_e('Skip to content', 'jazzclubtownsville'); ?></a>
 
 	<?php if (get_header_image() && is_front_page()) : // Adds Header image above Header. Only displays on Home page. ?>
 	<figure class="header-image">
@@ -57,10 +57,10 @@
 										 rel="home"><?php bloginfo('name'); ?></a></p>
 			<?php
 			endif;
-			$jazzify_description = get_bloginfo('description', 'display');
-			if ($jazzify_description || is_customize_preview()) :
+			$jazzclubtownsville_description = get_bloginfo('description', 'display');
+			if ($jazzclubtownsville_description || is_customize_preview()) :
 				?>
-				<p class="site-description"><?php echo $jazzify_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+				<p class="site-description"><?php echo $jazzclubtownsville_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 					?></p>
 			<?php endif; ?>
 		</div>
@@ -68,7 +68,7 @@
 
 	<nav id="site-navigation" class="main-navigation">
 		<button class="menu-toggle" aria-controls="primary-menu"
-				aria-expanded="false"><?php esc_html_e('Menu', 'jazzify'); ?></button>
+				aria-expanded="false"><?php esc_html_e('Menu', 'jazzclubtownsville'); ?></button>
 		<?php
 		wp_nav_menu(
 			array(

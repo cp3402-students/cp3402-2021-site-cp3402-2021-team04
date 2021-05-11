@@ -1,10 +1,10 @@
 <?php
 /**
- * Jazzify functions and definitions
+ * JazzClubTownsville functions and definitions
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
- * @package Jazzify
+ * @package JazzClubTownsville
  */
 
 if (!defined('_S_VERSION')) {
@@ -12,7 +12,7 @@ if (!defined('_S_VERSION')) {
 	define('_S_VERSION', '1.0.0');
 }
 
-if (!function_exists('jazzify_setup')) :
+if (!function_exists('jazzclubtownsville_setup')) :
 	/**
 	 * Sets up theme defaults and registers support for various WordPress features.
 	 *
@@ -20,15 +20,15 @@ if (!function_exists('jazzify_setup')) :
 	 * runs before the init hook. The init hook is too late for some features, such
 	 * as indicating support for post thumbnails.
 	 */
-	function jazzify_setup()
+	function jazzclubtownsville_setup()
 	{
 		/*
 		 * Make theme available for translation.
 		 * Translations can be filed in the /languages/ directory.
-		 * If you're building a theme based on Jazzify, use a find and replace
-		 * to change 'jazzify' to the name of your theme in all the template files.
+		 * If you're building a theme based on JazzClubTownsville, use a find and replace
+		 * to change 'jazzclubtownsville' to the name of your theme in all the template files.
 		 */
-		load_theme_textdomain('jazzify', get_template_directory() . '/languages');
+		load_theme_textdomain('jazzclubtownsville', get_template_directory() . '/languages');
 
 		// Add default posts and comments RSS feed links to head.
 		add_theme_support('automatic-feed-links');
@@ -51,8 +51,8 @@ if (!function_exists('jazzify_setup')) :
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus(
 			array(
-				'menu-1' => esc_html__('Primary', 'jazzify'),
-				'footer-menu' => esc_html( 'Footer Menu', 'jazzify' ),
+				'menu-1' => esc_html__('Primary', 'jazzclubtownsville'),
+				'footer-menu' => esc_html( 'Footer Menu', 'jazzclubtownsville' ),
 			)
 		);
 
@@ -77,7 +77,7 @@ if (!function_exists('jazzify_setup')) :
 		add_theme_support(
 			'custom-background',
 			apply_filters(
-				'jazzify_custom_background_args',
+				'jazzclubtownsville_custom_background_args',
 				array(
 					'default-color' => 'ffffff',
 					'default-image' => '',
@@ -104,12 +104,12 @@ if (!function_exists('jazzify_setup')) :
 		);
 	}
 endif;
-add_action('after_setup_theme', 'jazzify_setup');
+add_action('after_setup_theme', 'jazzclubtownsville_setup');
 
 /**
  * Register custom fonts.
  */
-function jazzify_fonts_url()
+function jazzclubtownsville_fonts_url()
 {
 	$fonts_url = '';
 
@@ -118,8 +118,8 @@ function jazzify_fonts_url()
 	 * supported by Source Sans Pro and Source Serif Pro, translate this to 'off'. Do not translate
 	 * into your own language.
 	 */
-	$source_sans_pro = _x('on', 'Source Sans Pro font: on or off', 'jazzify');
-	$source_serif_pro = _x('on', 'Source Serif Pro font: on or off', 'jazzify');
+	$source_sans_pro = _x('on', 'Source Sans Pro font: on or off', 'jazzclubtownsville');
+	$source_serif_pro = _x('on', 'Source Serif Pro font: on or off', 'jazzclubtownsville');
 
 	$font_families = array();
 
@@ -153,25 +153,25 @@ function jazzify_fonts_url()
  *
  * @global int $content_width
  */
-function jazzify_content_width()
+function jazzclubtownsville_content_width()
 {
-	$GLOBALS['content_width'] = apply_filters('jazzify_content_width', 640);
+	$GLOBALS['content_width'] = apply_filters('jazzclubtownsville_content_width', 640);
 }
 
-add_action('after_setup_theme', 'jazzify_content_width', 0);
+add_action('after_setup_theme', 'jazzclubtownsville_content_width', 0);
 
 /**
  * Register widget area.
  *
  * @link https://developer.wordpress.org/themes/functionality/sidebars/#registering-a-sidebar
  */
-function jazzify_widgets_init()
+function jazzclubtownsville_widgets_init()
 {
 	register_sidebar(
 		array(
-			'name' => esc_html__('Sidebar', 'jazzify'),
+			'name' => esc_html__('Sidebar', 'jazzclubtownsville'),
 			'id' => 'sidebar-1',
-			'description' => esc_html__('Add widgets here.', 'jazzify'),
+			'description' => esc_html__('Add widgets here.', 'jazzclubtownsville'),
 			'before_widget' => '<section id="%1$s" class="widget %2$s">',
 			'after_widget' => '</section>',
 			'before_title' => '<h2 class="widget-title">',
@@ -180,24 +180,24 @@ function jazzify_widgets_init()
 	);
 }
 
-add_action('widgets_init', 'jazzify_widgets_init');
+add_action('widgets_init', 'jazzclubtownsville_widgets_init');
 
 /**
  * Enqueue scripts and styles.
  */
-function jazzify_scripts()
+function jazzclubtownsville_scripts()
 {
 	// Enqueue Google Fonts: Source Sans Pro and Source Serif Pro
-	wp_enqueue_style('jazzify-fonts', jazzify_fonts_url());
+	wp_enqueue_style('jazzclubtownsville-fonts', jazzclubtownsville_fonts_url());
 
-	wp_enqueue_style('jazzify-style', get_stylesheet_uri(), array(), wp_get_theme()->get('Version'));
-	wp_style_add_data('jazzify-style', 'rtl', 'replace');
+	wp_enqueue_style('jazzclubtownsville-style', get_stylesheet_uri(), array(), wp_get_theme()->get('Version'));
+	wp_style_add_data('jazzclubtownsville-style', 'rtl', 'replace');
 
-	wp_enqueue_script('jazzify-navigation', get_template_directory_uri() . '/js/navigation.js', array('jquery'), _S_VERSION, true);
+	wp_enqueue_script('jazzclubtownsville-navigation', get_template_directory_uri() . '/js/navigation.js', array('jquery'), _S_VERSION, true);
 
-	wp_localize_script('jazzify-navigation', 'jazzifyScreenReaderText', array(
-		'expand' => __('Expand child menu', 'jazzify'),
-		'collapse' => __('Collapse child menu', 'jazzify')
+	wp_localize_script('jazzclubtownsville-navigation', 'jazzclubtownsvilleScreenReaderText', array(
+		'expand' => __('Expand child menu', 'jazzclubtownsville'),
+		'collapse' => __('Collapse child menu', 'jazzclubtownsville')
 	));
 
 	if (is_singular() && comments_open() && get_option('thread_comments')) {
@@ -205,7 +205,7 @@ function jazzify_scripts()
 	}
 }
 
-add_action('wp_enqueue_scripts', 'jazzify_scripts');
+add_action('wp_enqueue_scripts', 'jazzclubtownsville_scripts');
 
 /**
  * Implement the Custom Header feature.

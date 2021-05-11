@@ -4,7 +4,7 @@
  *
  * @link https://jetpack.com/
  *
- * @package Jazzify
+ * @package JazzClubTownsville
  */
 
 /**
@@ -14,13 +14,13 @@
  * See: https://jetpack.com/support/responsive-videos/
  * See: https://jetpack.com/support/content-options/
  */
-function jazzify_jetpack_setup() {
+function jazzclubtownsville_jetpack_setup() {
 	// Add theme support for Infinite Scroll.
 	add_theme_support(
 		'infinite-scroll',
 		array(
 			'container' => 'main',
-			'render'    => 'jazzify_infinite_scroll_render',
+			'render'    => 'jazzclubtownsville_infinite_scroll_render',
 			'footer'    => 'page',
 		)
 	);
@@ -33,7 +33,7 @@ function jazzify_jetpack_setup() {
 		'jetpack-content-options',
 		array(
 			'post-details' => array(
-				'stylesheet' => 'jazzify-style',
+				'stylesheet' => 'jazzclubtownsville-style',
 				'date'       => '.posted-on',
 				'categories' => '.cat-links',
 				'tags'       => '.tags-links',
@@ -48,12 +48,12 @@ function jazzify_jetpack_setup() {
 		)
 	);
 }
-add_action( 'after_setup_theme', 'jazzify_jetpack_setup' );
+add_action( 'after_setup_theme', 'jazzclubtownsville_jetpack_setup' );
 
 /**
  * Custom render function for Infinite Scroll.
  */
-function jazzify_infinite_scroll_render() {
+function jazzclubtownsville_infinite_scroll_render() {
 	while ( have_posts() ) {
 		the_post();
 		if ( is_search() ) :
