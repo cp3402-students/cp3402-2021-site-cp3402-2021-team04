@@ -155,6 +155,6 @@ Townsville-Jazz:
     <li>Update the "<b>Program</b>" field to <code>C:\Users\usr\AppData\Roaming\npm\sass</code></li>
     <li>Update the "<b>Program</b>" field to <code>$FileName$:../$FileNameWithoutExtension$.css</code></li>
     <li>Update the "<b>Output Path</b>" field to <code>../$FileNameWithoutExtension$.css:$FileNameWithoutExtension$.css.map</code></li>
-    <li>Under "<b>Advanceed Options</b>" tick "<b>Trigger the watcher regardless of syntax errors</b>".</li>
+    <li>Under "<b>Advanced Options</b>" tick "<b>Trigger the watcher regardless of syntax errors</b>".</li>
     <li>Click "<b>Apply</b>".</li>
 </ul>
