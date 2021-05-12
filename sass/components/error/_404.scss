@@ -1,0 +1,17 @@
+.not-found-content {
+  text-align: center;
+}
+
+.back-to-home {
+  text-decoration: none;
+  color: #21759b;
+
+  &:hover {
+    color: deepskyblue;
+  }
+}
+
+.not-found-content h1 {
+  margin: 0;
+  padding-top: 5px;
+}
