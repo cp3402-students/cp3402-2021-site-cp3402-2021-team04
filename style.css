@@ -1107,6 +1107,11 @@ button.dropdown-toggle {
   border-radius: 5px;
 }
 
+.site-info {
+  padding: 10px;
+  margin: auto;
+}
+
 footer {
   position: fixed;
   left: 0;
@@ -1566,6 +1571,11 @@ button.dropdown-toggle {
   color: white;
   background-color: #191516;
   border-radius: 5px;
+}
+
+.site-info {
+  padding: 10px;
+  margin: auto;
 }
 
 footer {
@@ -2059,6 +2069,11 @@ button.dropdown-toggle {
   border-radius: 5px;
 }
 
+.site-info {
+  padding: 10px;
+  margin: auto;
+}
+
 footer {
   position: fixed;
   left: 0;
@@ -2518,6 +2533,11 @@ button.dropdown-toggle {
   color: white;
   background-color: #191516;
   border-radius: 5px;
+}
+
+.site-info {
+  padding: 10px;
+  margin: auto;
 }
 
 footer {
