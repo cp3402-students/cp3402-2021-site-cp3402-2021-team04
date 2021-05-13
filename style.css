@@ -1107,6 +1107,16 @@ button.dropdown-toggle {
   border-radius: 5px;
 }
 
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: red;
+  color: white;
+  text-align: center;
+}
+
 .header-image {
   max-height: 50vh;
   overflow: hidden;
@@ -1556,6 +1566,16 @@ button.dropdown-toggle {
   color: white;
   background-color: #191516;
   border-radius: 5px;
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: red;
+  color: white;
+  text-align: center;
 }
 
 .site {
@@ -2039,6 +2059,16 @@ button.dropdown-toggle {
   border-radius: 5px;
 }
 
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: red;
+  color: white;
+  text-align: center;
+}
+
 .header-image {
   max-height: 50vh;
   overflow: hidden;
@@ -2488,6 +2518,16 @@ button.dropdown-toggle {
   color: white;
   background-color: #191516;
   border-radius: 5px;
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: red;
+  color: white;
+  text-align: center;
 }
 
 /*--------------------------------------------------------------
