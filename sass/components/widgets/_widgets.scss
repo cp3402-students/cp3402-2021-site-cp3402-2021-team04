@@ -5,55 +5,137 @@
 
 .widget {
   //spacing between each set of widgets on sidebar
-	margin: 0 0 1em;
+  margin: 0 0 1em;
   padding: 0 0 2em;
   font-family: $font__sans;
 
   ul,
-  ol{
+  ol {
     padding: .7em 0 0;
     margin-bottom: 0;
     list-style-type: none;
 
-    li{
+    li {
       display: block;
       line-height: 2em;
 
       ul,
-      ol{
+      ol {
         margin-left: .5em;
 
-        @media screen and (min-width: 30em){
+        @media screen and (min-width: 30em) {
           margin-left: 1em;
         }
       }
     }
   }
 
-  a{
+  a {
     font-weight: 600;
     text-decoration: none;
 
     &:hover,
-    &:focus{
+    &:focus {
       border-bottom: 3px solid black;
       //$color__REPLACE_ME: #HEX; - to replace "black"
     }
   }
 
-	// Make sure select elements fit in widgets.
-	select {
-		max-width: 100%;
+  // Make sure select elements fit in widgets.
+  select {
+    max-width: 100%;
     height: 2em;
     padding: 10px;
     font-family: $font__sans;
     border: 1px solid yellow;
-	}
+  }
 }
 
-.widget-title{
+.widget-title {
   margin-top: 0;
   margin-bottom: .5em;
   font-size: 1.4em;
   padding: 1em;
+}
+
+.widget-area {
+  margin-top: 1.5em;
+  padding: 0 0 2em;
+}
+
+@media only screen and (max-width: $query__mobile-l) {
+  .widget-title {
+    margin-top: 0;
+    margin-bottom: .5em;
+    margin-left: -.75em;
+    font-size: 1.4em;
+    padding: 1em;
+  }
+
+  .widget {
+    //spacing between each set of widgets on sidebar
+    margin: 0 0 1em;
+    padding: 0 0 2em;
+    font-family: $font__sans;
+
+    ul,
+    ol {
+      padding: .7em 0 0;
+      margin-bottom: 0;
+      list-style-type: none;
+      margin-left: 0em;
+
+      li {
+        display: block;
+        line-height: 2em;
+
+        ul,
+        ol {
+          margin-left: 2em;
+
+          @media screen and (min-width: 30em) {
+            margin-left: 1em;
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: $query__mobile-m) {
+  .widget-title {
+    margin-top: 0;
+    margin-bottom: .5em;
+    margin-left: -1em;
+    font-size: 1.4em;
+    padding: 1em;
+  }
+
+  .widget {
+    //spacing between each set of widgets on sidebar
+    margin: 0 0 1em;
+    padding: 0 0 2em;
+    font-family: $font__sans;
+
+    ul,
+    ol {
+      padding: .7em 0 0;
+      margin-bottom: 0;
+      list-style-type: none;
+      margin-left: 0em;
+
+      li {
+        display: block;
+        line-height: 2em;
+
+        ul,
+        ol {
+          margin-left: 2em;
+
+          @media screen and (min-width: 30em) {
+            margin-left: 1em;
+          }
+        }
+      }
+    }
+  }
 }
