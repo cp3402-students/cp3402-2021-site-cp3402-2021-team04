@@ -2557,6 +2557,7 @@ button.dropdown-toggle {
 --------------------------------------------- */
 .widget-area {
   margin-top: 1.5em;
+  padding: 0 0 2em;
 }
 
 .widget {
@@ -2608,6 +2609,7 @@ button.dropdown-toggle {
   margin-top: 0;
   margin-bottom: 0.5em;
   font-size: 1.4em;
+  padding: 1em;
 }
 
 /* Media
