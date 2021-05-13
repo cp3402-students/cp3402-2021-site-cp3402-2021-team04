@@ -5,3 +5,57 @@
 .bypostauthor {
 	display: block;
 }
+// Overall area for creating comments
+.comments-area {
+  background-color: slategrey;
+  font: $font__sans;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+// Title for creating comments
+.comment-reply-title {
+  text-align: center;
+}
+
+//Is logged in / is not logged in
+.logged-in-as{
+
+}
+
+
+// Submit form / submit comment
+.form-submit{
+  color: yellow;
+}
+
+.comment-notes {
+
+}
+
+.comment-form-author{
+
+}
+
+.comment-form-email{
+
+}
+
+.comment-form-url{
+
+}
+
+.form-submit {
+  text-align: center;
+  .submit{
+    color:white;
+    margin-bottom: 1em;
+    &:hover{
+      background-color: #111111;
+      color: white;
+      text-decoration: underline;
+      border-radius: 5px;
+    }
+
+  }
+}
