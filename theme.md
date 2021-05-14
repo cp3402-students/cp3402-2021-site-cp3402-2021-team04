@@ -51,7 +51,12 @@
     <li>Appropriate spacing between titles and posts on sidebar</li>
 </ul>
 
-
+<h3>Widgets</h3>
+<ul>
+    <li>Uses universal default set font variable</li>
+    <li>Hover colour is universal colour variable</li>
+    <li>Each widget has their own appropriate margin and padding, separate from the sidebar</li>
+</ul>
 
 <h2>Guideline</h2>
 <p>Things to know if you are looking to contribute to the theme's development:</p>
