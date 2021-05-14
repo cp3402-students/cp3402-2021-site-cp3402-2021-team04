@@ -60,8 +60,6 @@
 <ol>
     <li>404 Page Layout</li>
     <li>Single Post Template</li>
-    <li>Widget Layouts</li>
-    <li>Sidebar Styling</li>
     <li>Customizer integration</li>
     <li>Theme Featured Image</li>
 </ol>
