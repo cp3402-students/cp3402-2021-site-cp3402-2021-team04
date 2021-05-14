@@ -44,6 +44,15 @@
     <li>On screens smaller than a tablet (Google specified sizes) the columns are stacked as rows.</li>
 </ul>
 
+<h3>Sidebar</h3>
+<ul>
+    <li>Floats on left side of screen</li>
+    <li>Sidebar appropriately collapses and expands depending on screen size</li>
+    <li>Appropriate spacing between titles and posts on sidebar</li>
+</ul>
+
+
+
 <h2>Guideline</h2>
 <p>Things to know if you are looking to contribute to the theme's development:</p>
 <ul>
