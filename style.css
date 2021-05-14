@@ -2565,11 +2565,8 @@ button.dropdown-toggle {
 }
 
 .form-submit {
-  color: yellow;
-}
-
-.form-submit {
   text-align: center;
+  color: yellow;
 }
 .form-submit .submit {
   color: white;
@@ -2582,6 +2579,58 @@ button.dropdown-toggle {
   border-radius: 5px;
 }
 
+.has-avatars {
+  padding: 1em 1em 1em 16px;
+}
+
+.wp-block-latest-comments__comment {
+  background-color: #CCCCCC;
+  padding-right: 48px;
+}
+
+.wp-block-latest-comments__comment-meta {
+  margin: 0 0 48px;
+  background-color: #55737D;
+  color: #FFFFFF;
+}
+.wp-block-latest-comments__comment-meta a {
+  color: white;
+}
+
+.wp-block-latest-comments__comment-excerpt {
+  color: black;
+  text-align: center;
+}
+
+.comments-area .comment .comment-body {
+  background-color: #CCCCCC;
+  margin-bottom: 1em;
+}
+.comments-area .comment .comment-meta {
+  margin: 0 0 48px;
+  background-color: #55737D;
+  color: #FFFFFF;
+}
+.comments-area .comment .comment-meta a {
+  color: white;
+}
+.comments-area .comment .comment-content {
+  background-color: #CCCCCC;
+}
+
+@media screen and (max-width: 425px) {
+  .comments-area .comment {
+    margin: 0 0 0 0;
+    padding-left: 0;
+  }
+  .comments-area .comment .children {
+    margin: 0 0 0 0;
+    padding-left: 0;
+  }
+  .comments-area .comment-list {
+    margin: 0;
+  }
+}
 /* Widgets
 --------------------------------------------- */
 .widget {
