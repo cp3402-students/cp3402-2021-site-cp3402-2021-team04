@@ -2732,23 +2732,4 @@ button.dropdown-toggle {
   margin-bottom: 1.5em;
 }
 
-/* 404 Page
---------------------------------------------- */
-.not-found-content {
-  text-align: center;
-}
-
-.back-to-home {
-  text-decoration: none;
-  color: #21759b;
-}
-.back-to-home:hover {
-  color: deepskyblue;
-}
-
-.not-found-content h1 {
-  margin: 0;
-  padding-top: 5px;
-}
-
 /*# sourceMappingURL=style.css.map */
