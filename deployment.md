@@ -36,7 +36,7 @@
 
 <p>
     Both branches <code>#utility---push-to-staging</code> and <code>#utility---push-to-production</code> have webhooks setup. 
-    These webhooks will be triggered when a commit occurs on either of these branches and will pushing the new theme version to the respective web server .
+    These webhooks will be triggered when a commit occurs on either of these branches and will pushing the new theme version to the respective web server.
 </p>
 
 <h5>Version Branches</h5>
