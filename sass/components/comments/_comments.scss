@@ -5,3 +5,97 @@
 .bypostauthor {
 	display: block;
 }
+// Overall area for creating comments
+.comments-area {
+  font: $font__sans;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+// Title for creating comments
+.comment-reply-title {
+  text-decoration: underline;
+  font-size: 25px;
+}
+
+// Submit form / submit comment
+.form-submit{
+  text-align: center;
+  color: yellow;
+// Button/Text to submit comment
+  .submit{
+    color:white;
+    margin-bottom: 1em;
+    &:hover{
+      background-color: #111111;
+      color: white;
+      text-decoration: underline;
+      border-radius: 5px;
+    }
+
+  }
+}
+// Top of comment
+.has-avatars{
+  padding: 1em 1em 1em 16px;
+}
+
+// Overall comment
+.wp-block-latest-comments__comment {
+  background-color:#CCCCCC;
+  border-radius: 10px;
+  padding-right: 48px;
+}
+// Comment information (name, date, links)
+.wp-block-latest-comments__comment-meta{
+  margin: 0 0 48px;
+  background-color:#55737D;
+  border-radius: 10px;
+  color:#FFFFFF;
+  a {
+    color: white;
+  }
+}
+// Comment excerpt (Text)
+.wp-block-latest-comments__comment-excerpt{
+  color:black;
+  text-align: center;
+}
+
+.comments-area{
+  .comment{
+    .comment-body{
+      background-color: #cccccc;
+      border-radius: 10px;
+      margin-bottom: 1em;
+    }
+    .comment-meta{
+      margin: 0 0 48px;
+      background-color:#55737D;
+      border-radius: 10px;
+      color:#FFFFFF;
+      a {
+        color: white;
+      }
+    }
+    .comment-content{
+
+    }
+  }
+}
+
+@media screen and (max-width: $query__mobile-l) {
+  .comments-area{
+    .comment{
+      margin: 0 0 0 0;
+      padding-left: 0;
+        .children{
+          margin: 0 0 0 0;
+          padding-left: 0;
+      }
+    }
+    .comment-list{
+      margin: 0;
+    }
+  }
+}
