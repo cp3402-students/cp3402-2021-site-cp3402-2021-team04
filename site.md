@@ -54,13 +54,22 @@ Photo Gallery is the leading plugin for building beautiful mobile-friendly galle
 2. Select Plugins page from toolbar menu, click Add New.
 3. Search for Photo Gallery in the right-top search bar if you want to download the Free version or click Upload Plugin button > “Choose file” (“Browse”) and select the Photo Gallery zip file if you are installing the Professional version of Photo Gallery.
 
+<h3>Simple History</h3>
+Simple History shows recent changes made within WordPress, directly on your dashboard or on a separate page. \
+[https://wordpress.org/plugins/simple-history/](https://wordpress.org/plugins/simple-history/)
+
+<h4>Installation</h4>
+1. Log-in to your WordPress administrator panel.
+2. Go to “Plugins” >> “Add new”
+3. Search for “Simple History” and click install.
+
 <h2>How to add media to media players</h2> <!--#TODO ADD MEDIA to MEDIA PLAYERS -->
 1.
 2.
 3.
 
 <h2>Change the Logo</h2>
-1. In the WordPress Dashboard select Appearance -> Customize -> Site Identity from the left navigation sidebar.
+1. In the WordPress Dashboard select Appearance >> Customize >> Site Identity from the left navigation sidebar.
 2. Click Select logo and upload the photo you wish to use for the website.
 3. Click publish to save your changes and upload to the website
 
