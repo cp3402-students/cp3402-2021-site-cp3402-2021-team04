@@ -1,4 +1,6 @@
 h1, h2, h3, h4, h5, h6 {
+  margin-top: .75em;
+  margin-bottom: .25em;
   clear: both;
   // Set default header font to font_sans
   font-family: $font__sans;
