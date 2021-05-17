@@ -5,7 +5,9 @@
 
 <h1>Site Details</h1>
   <p>
-    <a href="#">Home Page</a> · <a href="#">Site Details</a> · <a href="#">Deployment Details</a>
+    <a href="https://github.com/cp3402-students/cp3402-2021-site-cp3402-2021-team04">Home Page</a>
+· <a href="https://github.com/cp3402-students/cp3402-2021-site-cp3402-2021-team04/blob/main/theme.md">Theme Details</a>
+· <a href="https://github.com/cp3402-students/cp3402-2021-site-cp3402-2021-team04/blob/main/deployment.md">Deployment Details</a>
   </p>
 </div>
 <hr/>
@@ -70,7 +72,7 @@
 <ol>2. Click Select logo and upload the photo you wish to use for the website.</ol>
 <ol>3. Click publish to save your changes and upload to the website. </ol>
 
-<h2>How to create navigation Menu</h2>
+<h2>How to create a navigation menu</h2>
 <ol>1. Log into WordPress admin</ol>
 <ol>2. Hover over appearance on the left side column and press customize</ol>
 <ol>3. Press Menus on the left side column</ol>
@@ -80,7 +82,7 @@
 <ol>7. Set display locations to Primary.</ol>
 <ol>8. Press Save Menu in the bottom right of your screen. Exit the admin and open your website to test if your menu is there.</ol>
 
-<h2>Footer Social Menu</h2>
+<h2>How to create a footer social media menu</h2>
 
 <ol>1. Log into WordPress admin</ol>
 <ol>2. Hover over appearance on the left side column and press customize</ol>
