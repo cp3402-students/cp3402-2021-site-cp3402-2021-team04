@@ -1107,6 +1107,18 @@ button.dropdown-toggle {
   border-radius: 5px;
 }
 
+.site-info {
+  padding: 10px;
+  margin: auto;
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  text-align: center;
+}
+
 .header-image {
   max-height: 50vh;
   overflow: hidden;
@@ -1556,6 +1568,18 @@ button.dropdown-toggle {
   color: white;
   background-color: #191516;
   border-radius: 5px;
+}
+
+.site-info {
+  padding: 10px;
+  margin: auto;
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  text-align: center;
 }
 
 .site {
@@ -2039,6 +2063,18 @@ button.dropdown-toggle {
   border-radius: 5px;
 }
 
+.site-info {
+  padding: 10px;
+  margin: auto;
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  text-align: center;
+}
+
 .header-image {
   max-height: 50vh;
   overflow: hidden;
@@ -2488,6 +2524,18 @@ button.dropdown-toggle {
   color: white;
   background-color: #191516;
   border-radius: 5px;
+}
+
+.site-info {
+  padding: 10px;
+  margin: auto;
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  text-align: center;
 }
 
 /*--------------------------------------------------------------
