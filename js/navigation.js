@@ -1,4 +1,4 @@
-/* global jazzclubtownsvilleScreenReaderText */
+/* global jazzifyScreenReaderText */
 /**
  * Theme functions file.
  * Modified version of the twentyseventeen theme
@@ -13,7 +13,7 @@
     // Add dropdown toggle that displays child menu items.
     var dropdownToggle = $('<button />', {'class': 'dropdown-toggle', 'aria-expanded': false})
       .append($('<span />', {'class': 'dropdown-icon', text: '▾'}))
-      .append($('<span />', {'class': 'screen-reader-text', text: jazzclubtownsvilleScreenReaderText.expand}));
+      .append($('<span />', {'class': 'screen-reader-text', text: jazzifyScreenReaderText.expand}));
 
     // Append dropdown-toggle to dropdown items
     container.find('.menu-item-has-children > a, .page_item_has_children > a').after(dropdownToggle);
@@ -30,7 +30,7 @@
 
       _this.attr('aria-expanded', _this.attr('aria-expanded') === 'false' ? 'true' : 'false');
 
-      screenReaderSpan.text(screenReaderSpan.text() === jazzclubtownsvilleScreenReaderText.expand ? jazzclubtownsvilleScreenReaderText.collapse : jazzclubtownsvilleScreenReaderText.expand);
+      screenReaderSpan.text(screenReaderSpan.text() === jazzifyScreenReaderText.expand ? jazzifyScreenReaderText.collapse : jazzifyScreenReaderText.expand);
       dropdownIcon.text(dropdownIcon.text() === '▴' ? '▾' : '▴');
     });
   }
@@ -53,7 +53,7 @@
     // Add an initial value for the attribute.
     menuToggle.attr('aria-expanded', 'false');
 
-    menuToggle.on('click.jazzclubtownsville', function () {
+    menuToggle.on('click.jazzify', function () {
       siteNavContain.toggleClass('toggled-on');
 
       $(this).attr('aria-expanded', siteNavContain.hasClass('toggled-on'));
@@ -70,14 +70,14 @@
     function toggleFocusClassTouchScreen() {
       if ('none' === $('.menu-toggle').css('display')) {
 
-        $(document.body).on('touchstart.jazzclubtownsville', function (e) {
+        $(document.body).on('touchstart.jazzify', function (e) {
           if (!$(e.target).closest('.main-navigation li').length) {
             $('.main-navigation li').removeClass('focus');
           }
         });
 
         siteNavigation.find('.menu-item-has-children > a, .page_item_has_children > a')
-          .on('touchstart.jazzclubtownsville', function (e) {
+          .on('touchstart.jazzify', function (e) {
             var el = $(this).parent('li');
 
             if (!el.hasClass('focus')) {
@@ -88,16 +88,16 @@
           });
 
       } else {
-        siteNavigation.find('.menu-item-has-children > a, .page_item_has_children > a').unbind('touchstart.jazzclubtownsville');
+        siteNavigation.find('.menu-item-has-children > a, .page_item_has_children > a').unbind('touchstart.jazzify');
       }
     }
 
     if ('ontouchstart' in window) {
-      $(window).on('resize.jazzclubtownsville', toggleFocusClassTouchScreen);
+      $(window).on('resize.jazzify', toggleFocusClassTouchScreen);
       toggleFocusClassTouchScreen();
     }
 
-    siteNavigation.find('a').on('focus.jazzclubtownsville blur.jazzclubtownsville', function () {
+    siteNavigation.find('a').on('focus.jazzify blur.jazzify', function () {
       $(this).parents('.menu-item, .page_item').toggleClass('focus');
     });
   })();

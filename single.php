@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#single-post
  *
- * @package JazzClubTownsville
+ * @package Jazzify
  */
 
 get_header();
@@ -19,11 +19,11 @@ get_header();
 			get_template_part( 'template-parts/content', get_post_type() );
 
 			the_post_navigation(
-				array('next_text' => '<span class="meta-nav" aria-hidden="true">' . __( 'Next', 'jazzclubtownsville' ) . '</span> ' .
-					'<span class="screen-reader-text">' . __( 'Next post:', 'jazzclubtownsville' ) . '</span> ' .
+				array('next_text' => '<span class="meta-nav" aria-hidden="true">' . __( 'Next', 'jazzify' ) . '</span> ' .
+					'<span class="screen-reader-text">' . __( 'Next post:', 'jazzify' ) . '</span> ' .
 					'<span class="post-title">%title</span>',
-					'prev_text' => '<span class="meta-nav" aria-hidden="true">' . __( 'Previous', 'jazzclubtownsville' ) . '</span> ' .
-						'<span class="screen-reader-text">' . __( 'Previous post:', 'jazzclubtownsville' ) . '</span> ' .
+					'prev_text' => '<span class="meta-nav" aria-hidden="true">' . __( 'Previous', 'jazzify' ) . '</span> ' .
+						'<span class="screen-reader-text">' . __( 'Previous post:', 'jazzify' ) . '</span> ' .
 						'<span class="post-title">%title</span>',
 				)   );
 

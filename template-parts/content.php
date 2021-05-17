@@ -4,14 +4,14 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package JazzClubTownsville
+ * @package Jazzify
  */
 
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
-		<?php jazzclubtownsville_the_category_list(); ?>
+		<?php jazzify_the_category_list(); ?>
 		<?php
 		if ( is_singular() ) :
 			the_title( '<h1 class="entry-title">', '</h1>' );
@@ -23,14 +23,14 @@
 			?>
 			<div class="entry-meta">
 				<?php
-				jazzclubtownsville_posted_on();
-				jazzclubtownsville_posted_by();
+				jazzify_posted_on();
+				jazzify_posted_by();
 				?>
 			</div><!-- .entry-meta -->
 		<?php endif; ?>
 	</header><!-- .entry-header -->
 
-	<?php jazzclubtownsville_post_thumbnail(); ?>
+	<?php jazzify_post_thumbnail(); ?>
 
 	<div class="entry-content">
 		<?php
@@ -38,7 +38,7 @@
 			sprintf(
 				wp_kses(
 					/* translators: %s: Name of current post. Only visible to screen readers */
-					__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'jazzclubtownsville' ),
+					__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'jazzify' ),
 					array(
 						'span' => array(
 							'class' => array(),
@@ -51,7 +51,7 @@
 
 		wp_link_pages(
 			array(
-				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'jazzclubtownsville' ),
+				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'jazzify' ),
 				'after'  => '</div>',
 			)
 		);
@@ -59,6 +59,6 @@
 	</div><!-- .entry-content -->
 
 	<footer class="entry-footer">
-		<?php jazzclubtownsville_entry_footer(); ?>
+		<?php jazzify_entry_footer(); ?>
 	</footer><!-- .entry-footer -->
 </article><!-- #post-<?php the_ID(); ?> -->
