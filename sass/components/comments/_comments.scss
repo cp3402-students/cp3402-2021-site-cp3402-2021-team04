@@ -7,7 +7,6 @@
 }
 // Overall area for creating comments
 .comments-area {
-  background-color: slategrey;
   font: $font__sans;
   padding-left: 1em;
   padding-right: 1em;
@@ -15,12 +14,8 @@
 
 // Title for creating comments
 .comment-reply-title {
-  text-align: center;
-}
-
-//Is logged in / is not logged in
-.logged-in-as{
-
+  text-decoration: underline;
+  font-size: 25px;
 }
 
 // Submit form / submit comment
@@ -48,51 +43,42 @@
 // Overall comment
 .wp-block-latest-comments__comment {
   background-color:#CCCCCC;
+  border-radius: 10px;
   padding-right: 48px;
 }
 // Comment information (name, date, links)
 .wp-block-latest-comments__comment-meta{
   margin: 0 0 48px;
   background-color:#55737D;
+  border-radius: 10px;
   color:#FFFFFF;
   a {
     color: white;
   }
-}
-// Comment Date
-.wp-block-latest-comments__comment-date{
-
 }
 // Comment excerpt (Text)
 .wp-block-latest-comments__comment-excerpt{
   color:black;
   text-align: center;
 }
-// Comment author
-.wp-block-latest-comments__comment-author{
-
-}
-// Comment link to webpage
-.wp-block-latest-comments__comment-link{
-
-}
 
 .comments-area{
   .comment{
     .comment-body{
-      background-color:#CCCCCC;
+      background-color: #cccccc;
+      border-radius: 10px;
       margin-bottom: 1em;
     }
     .comment-meta{
       margin: 0 0 48px;
       background-color:#55737D;
+      border-radius: 10px;
       color:#FFFFFF;
       a {
         color: white;
       }
     }
     .comment-content{
-      background-color:#CCCCCC;
 
     }
   }
