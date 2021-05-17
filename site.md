@@ -5,7 +5,9 @@
 
 <h1>Site Details</h1>
   <p>
-    <a href="#">Home Page</a> · <a href="#">Site Details</a> · <a href="#">Deployment Details</a>
+    <a href="https://github.com/cp3402-students/cp3402-2021-site-cp3402-2021-team04">Home Page</a>
+· <a href="https://github.com/cp3402-students/cp3402-2021-site-cp3402-2021-team04/blob/main/theme.md">Theme Details</a>
+· <a href="https://github.com/cp3402-students/cp3402-2021-site-cp3402-2021-team04/blob/main/deployment.md">Deployment Details</a>
   </p>
 </div>
 <hr/>
