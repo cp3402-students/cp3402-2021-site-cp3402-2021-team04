@@ -10,67 +10,76 @@
 </div>
 <hr/>
 
-<h2>Pages</h2>
+<h2>Plugins</h2>
 
-<h3>Home Page</h3>
-<ul>
-    <li>A page filled with content and photos to attract customers.</li>
-</ul>
-
-<h3>Program Page</h3> 
-<ul>
-  <li>A page filled posts of programs upcoming and past</li>
-  <li>A booking form at the bottom for booking events</li>
-</ul>
-
-<h3>Location Page</h3>
-<ul>
-  <li>A page that has information on the location of the jazz club</li>
-  <li>A photo of the location and a google maps link to get there</li>
-</ul>
-
-<h3>Photos Page</h3> <!--#TODO need to see wat these are -->
-<ul>
-    <li>A presentation of photos from the year they were taken</li>
-    <li></li>
-</ul>
-
-<h3>Bands Page</h3>
-<ul>
-    <li>Bands are a list of posts within a page that have a brief statement about the band</li>
-    <li>When adding a new band to the page you create a new post in the category "bands"</li>
-</ul>
-
-<h4>Band 1,2,3,4,5</h4>
-<ul>
-  <li>Title of band at the top of the page</li>
-  <li>Photos of band playing</li>
-  <li>Members of the band and instrument</li>
-  <li>Facts about band</li>
-</ul>
+<h3>WP Google Maps</h3>
+The most comprehensive and user friendly WordPress Map Plugin \
+[https://www.wpgmaps.com/](https://www.wpgmaps.com/)
+<h4>Installation</h4>
+1. Log into your WordPress site and navigate to WordPress Dashboard → Plugins → Add New.
+2. In the Search box at the top-right of the screen, type the words “WP Google Maps” and press {Enter}.
+3. Click the Install Now button shown in the screenshot below. The plugin will install without any intervention.
+4. Click the Activate button shown in the screenshot below. The plugin will activate.
+5. Click Installed Plugins in the left sidebar of the WordPress Dashboard. You should see the activated WP Google Maps plugin in your list of installed plugins as shown in the screenshot below.
+6. You can access the WP Google Maps plugin by clicking the Maps link in the left sidebar of the WordPress Dashboard.
 
 
-<h3>History Page</h3>
-<ul>
-  <li>History Page will not change and will not need any further updates.</li>
-  <li>List of Clubs in sub-menus and brief history of jazz clubs in townsville on main page.</li>
-  <li></li>
-</ul>
+<h3>WP Forms</h3>
+Drag & Drop WordPress Form Builder \
+[https://wpforms.com/](https://wpforms.com/)
+<h4>Installation</h4>
+1. To get started, first log into your WPForms account. Once you’ve logged in, go ahead and click on the Downloads tab.
+2. This will show you a page with all of your available licenses. To download the plugin, click on the Download WPForms button next to one of your licenses. This will save a zipped file of the WPForms plugin to your computer.
+3. Once you’ve downloaded your zip file, go ahead and navigate to the site where you’d like to install WPForms. Then, inside the admin dashboard, go to Plugins » Add New and click the Upload Plugin button.
+4. From here, you’ll see the option to upload the plugin. Click on the Choose File button and select the WPForms zip file you just downloaded.
+5. After your file is uploaded, go ahead and click on the Install Now button.
+6.This will begin the installation process for you. Once the plugin is installed, click on the Activate Plugin button to activate WPForms on your site.
 
-<h3>Member Info Page</h3>
-<ul>
-  <li>List of committee members and phone numbers</li>
-  <li>Have a membership form to sign up to that gets (emailed?) to jazzclub</li>
-</ul>
+<h3>WordPress Importer</h3>
+Drag & Drop WordPress Form Builder \
+[https://wordpress.org/support/article/importing-content/](https://wordpress.org/support/article/importing-content/)
 
-<h3>Jazz Festival Page</h3>
-<ul>
-    <li>Poster of Jazz Festival happening this year</li>
-</ul>
+<h4>Installation</h4>
+1. Visit Tools -> Import in the WordPress dashboard
+2. Click on the WordPress link in the list of importers
+3. Click “Install Now” 
+4. Finally click “Activate Plugin & Run Importer” 
 
-<h3>Jazz Radio Page</h3>
-<ul>
-  <li>Timetable of who is playing jazz at what time</li>
-  <li>Info of JazzRadio being played</li>  
-<li>Bio of each person playing at the radio station</li>
-</ul>
+<h3>Photo Gallery by 10Web</h3>
+Photo Gallery is the leading plugin for building beautiful mobile-friendly galleries in a few minutes. \
+[https://wordpress.org/plugins/photo-gallery/](https://wordpress.org/plugins/photo-gallery/)
+
+<h4>Installation</h4>
+1. Log-in to your WordPress administrator panel.
+2. Select Plugins page from toolbar menu, click Add New.
+3. Search for Photo Gallery in the right-top search bar if you want to download the Free version or click Upload Plugin button > “Choose file” (“Browse”) and select the Photo Gallery zip file if you are installing the Professional version of Photo Gallery.
+
+<h2>How to add media to media players</h2> <!--#TODO ADD MEDIA to MEDIA PLAYERS -->
+1.
+2.
+3.
+
+<h2>Change the Logo</h2>
+1. In the WordPress Dashboard select Appearance -> Customize -> Site Identity from the left navigation sidebar.
+2. Click Select logo and upload the photo you wish to use for the website.
+3. Click publish to save your changes and upload to the website
+
+<h2>How to create navigation Menu</h2>
+1. Log into WordPress admin
+2. Hover over appearance on the left side column and press customize
+3. Press Menus on the left side column
+4. Select your Menu(Primary) or create a new one with the "Create new menu button"
+5. Find the "add menu items" tab and begin adding pages to your menu with the "Add to Menu" button.
+6. Change the menu structure so that it is how you want it with children menu items.
+7. Set display locations to Primary.
+7. Press Save Menu in the bottom right of your screen. Exit the admin and open your website to test if your menu is there.
+
+<h2>Footer Social Menu</h2>
+
+1. Log into WordPress admin
+2. Hover over appearance on the left side column and press customize
+3. Press Menus on the left side column
+4. Select your Social Media Menu or create a new one with the "Create new menu button"
+5. Find the Menu Locations tab on the left and set to Social Media Menu
+6. Press Save Menu in the bottom right of your screen. Exit the admin and to test scroll to the footer to see if your social media links are there.
+<h2></h2>
