@@ -82,4 +82,3 @@ Photo Gallery is the leading plugin for building beautiful mobile-friendly galle
 4. Select your Social Media Menu or create a new one with the "Create new menu button"
 5. Find the Menu Locations tab on the left and set to Social Media Menu
 6. Press Save Menu in the bottom right of your screen. Exit the admin and to test scroll to the footer to see if your social media links are there.
-<h2></h2>
