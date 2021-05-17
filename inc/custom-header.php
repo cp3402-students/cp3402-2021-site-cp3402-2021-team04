@@ -8,39 +8,39 @@
  *
  * @link https://developer.wordpress.org/themes/functionality/custom-headers/
  *
- * @package JazzClubTownsville
+ * @package Jazzify
  */
 
 /**
  * Set up the WordPress core custom header feature.
  *
- * @uses jazzclubtownsville_header_style()
+ * @uses jazzify_header_style()
  */
-function jazzclubtownsville_custom_header_setup() {
+function jazzify_custom_header_setup() {
 	add_theme_support(
 		'custom-header',
 		apply_filters(
-			'jazzclubtownsville_custom_header_args',
+			'jazzify_custom_header_args',
 			array(
 				'default-image'      => '',
 				'default-text-color' => '000000',
 				'width'              => 1000,
 				'height'             => 250,
 				'flex-height'        => true,
-				'wp-head-callback'   => 'jazzclubtownsville_header_style',
+				'wp-head-callback'   => 'jazzify_header_style',
 			)
 		)
 	);
 }
-add_action( 'after_setup_theme', 'jazzclubtownsville_custom_header_setup' );
+add_action( 'after_setup_theme', 'jazzify_custom_header_setup' );
 
-if ( ! function_exists( 'jazzclubtownsville_header_style' ) ) :
+if ( ! function_exists( 'jazzify_header_style' ) ) :
 	/**
 	 * Styles the header image and text displayed on the blog.
 	 *
-	 * @see jazzclubtownsville_custom_header_setup().
+	 * @see jazzify_custom_header_setup().
 	 */
-	function jazzclubtownsville_header_style() {
+	function jazzify_header_style() {
 		$header_text_color = get_header_textcolor();
 
 		/*
