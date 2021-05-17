@@ -4,14 +4,14 @@
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
- * @package jazzclubtownsville
+ * @package jazzify
  */
 
 ?>
 
 	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 		<header class="entry-header">
-			<?php jazzclubtownsville_the_category_list(); ?>
+			<?php jazzify_the_category_list(); ?>
 			<?php
 			if ( is_single() ) :
 				the_title( '<h1 class="entry-title">', '</h1>' );
@@ -21,7 +21,7 @@
 
 			if ( is_active_sidebar( 'sidebar-1' ) ) : ?>
 				<div class="entry-meta">
-					<?php jazzclubtownsville_posted_on(); ?>
+					<?php jazzify_posted_on(); ?>
 				</div><!-- .entry-meta -->
 			<?php
 			endif; ?>
@@ -31,7 +31,7 @@
 		if ( has_post_thumbnail() ) { ?>
 			<figure class="featured-image full-bleed">
 				<?php
-				the_post_thumbnail('jazzclubtownsville-full-bleed');
+				the_post_thumbnail('jazzify-full-bleed');
 				?>
 			</figure><!-- .featured-image full-bleed -->
 		<?php } ?>
@@ -42,7 +42,7 @@
 			if ( !is_active_sidebar( 'sidebar-1' ) ) : ?>
 			<div class="post-content__wrap">
 				<div class="entry-meta">
-					<?php jazzclubtownsville_posted_on(); ?>
+					<?php jazzify_posted_on(); ?>
 				</div><!-- .entry-meta -->
 				<div class="post-content__body">
 					<?php
@@ -52,19 +52,19 @@
 						<?php
 						the_content( sprintf(
 						/* translators: %s: Name of current post. */
-							wp_kses( __( 'Continue reading %s <span class="meta-nav">&rarr;</span>', 'jazzclubtownsville' ), array( 'span' => array( 'class' => array() ) ) ),
+							wp_kses( __( 'Continue reading %s <span class="meta-nav">&rarr;</span>', 'jazzify' ), array( 'span' => array( 'class' => array() ) ) ),
 							the_title( '<span class="screen-reader-text">"', '"</span>', false )
 						) );
 
 						wp_link_pages( array(
-							'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'jazzclubtownsville' ),
+							'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'jazzify' ),
 							'after'  => '</div>',
 						) );
 						?>
 					</div><!-- .entry-content -->
 
 					<footer class="entry-footer">
-						<?php jazzclubtownsville_entry_footer(); ?>
+						<?php jazzify_entry_footer(); ?>
 					</footer><!-- .entry-footer -->
 
 					<?php
@@ -74,7 +74,7 @@
 		<?php endif; ?>
 
 			<?php
-			jazzclubtownsville_post_navigation();
+			jazzify_post_navigation();
 
 			// If comments are open or we have at least one comment, load up the comment template.
 			if ( comments_open() || get_comments_number() ) :

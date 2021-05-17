@@ -1,20 +1,20 @@
 @charset "UTF-8";
 /*!
-Theme Name: JazzClubTownsville
+Theme Name: Jazzify
 Theme URI: https://github.com/cp3402-students/cp3402-2021-site-cp3402-2021-team04/
 Author: Team 04
 Author URI: https://github.com/cp3402-students/cp3402-2021-site-cp3402-2021-team04
-Description: A custom WordPress theme developed for the Townsville Jazz Club.
-Version: 1.0.0
+Description: A modern and mobile friendly WordPress theme with a strong jazz flavour.
+Version: 2.0.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Text Domain: JazzClubTownsville
+Text Domain: Jazzify
 Tags:
 
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned.
 
-JazzClubTownsville is based on Underscores https://underscores.me/, (C) 2012-2020 Automattic, Inc.
+Jazzify is based on Underscores https://underscores.me/, (C) 2012-2020 Automattic, Inc.
 Underscores is distributed under the terms of the GNU GPL v2 or later.
 
 Normalizing styles have been helped along thanks to the fine work of
@@ -2780,14 +2780,14 @@ footer {
 }
 
 .comments-area {
-  background-color: slategrey;
   font: "Source Sans Pro", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Arial, sans-serif;
   padding-left: 1em;
   padding-right: 1em;
 }
 
 .comment-reply-title {
-  text-align: center;
+  text-decoration: underline;
+  font-size: 25px;
 }
 
 .form-submit {
@@ -2811,12 +2811,14 @@ footer {
 
 .wp-block-latest-comments__comment {
   background-color: #CCCCCC;
+  border-radius: 10px;
   padding-right: 48px;
 }
 
 .wp-block-latest-comments__comment-meta {
   margin: 0 0 48px;
   background-color: #55737D;
+  border-radius: 10px;
   color: #FFFFFF;
 }
 .wp-block-latest-comments__comment-meta a {
@@ -2829,21 +2831,19 @@ footer {
 }
 
 .comments-area .comment .comment-body {
-  background-color: #CCCCCC;
+  background-color: #cccccc;
+  border-radius: 10px;
   margin-bottom: 1em;
 }
 .comments-area .comment .comment-meta {
   margin: 0 0 48px;
   background-color: #55737D;
+  border-radius: 10px;
   color: #FFFFFF;
 }
 .comments-area .comment .comment-meta a {
   color: white;
 }
-.comments-area .comment .comment-content {
-  background-color: #CCCCCC;
-}
-
 @media screen and (max-width: 425px) {
   .comments-area .comment {
     margin: 0 0 0 0;
