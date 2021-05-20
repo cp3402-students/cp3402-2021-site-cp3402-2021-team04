@@ -382,7 +382,7 @@ html {
 --------------------------------------------- */
 body, button, input, select, optgroup, textarea {
   color: #404040;
-  font-family: "Source Serif Pro", Georgia, Cambria, "Times New Roman", Times, serif;
+  font-family: Georgia, Cambria, "Times New Roman", Times, serif;
   line-height: 1.5;
 }
 
