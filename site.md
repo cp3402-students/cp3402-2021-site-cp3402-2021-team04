@@ -14,18 +14,6 @@
 
 <h2>Plugins</h2>
 
-<h3>WP Google Maps</h3>
-<p> The most comprehensive and user friendly WordPress Map Plugin</p>
-<a href="https://www.wpgmaps.com">https://www.wpgmaps.com/</a>
-
-<h4>Installation</h4>
-<ol> 1. Log into your WordPress site and navigate to WordPress Dashboard → Plugins → Add New. </ol>
-<ol> 2. In the Search box at the top-right of the screen, type the words “WP Google Maps” and press {Enter}.</ol>
-<ol> 3. Click the Install Now button shown in the screenshot below. The plugin will install without any intervention.</ol>
-<ol> 4. Click the Activate button shown in the screenshot below. The plugin will activate.</ol>
-<ol> 5. Click Installed Plugins in the left sidebar of the WordPress Dashboard. You should see the activated WP Google Maps plugin in your list of installed plugins as shown in the screenshot below.</ol>
-<ol> 6. You can access the WP Google Maps plugin by clicking the Maps link in the left sidebar of the WordPress Dashboard.</ol>
-
 
 <h3>WP Forms</h3>
 <p>Drag & Drop WordPress Form Builder</p>

@@ -76,9 +76,11 @@
   margin: auto;
 }
 
-footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  text-align: center;
+@media screen and (min-width: $query__laptop) {
+  footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+  }
 }

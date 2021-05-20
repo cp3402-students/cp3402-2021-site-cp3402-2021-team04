@@ -382,7 +382,7 @@ html {
 --------------------------------------------- */
 body, button, input, select, optgroup, textarea {
   color: #404040;
-  font-family: "Source Serif Pro", Georgia, Cambria, "Times New Roman", Times, serif;
+  font-family: Georgia, Cambria, "Times New Roman", Times, serif;
   line-height: 1.5;
 }
 
@@ -1163,13 +1163,14 @@ button.dropdown-toggle {
   margin: auto;
 }
 
-footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  text-align: center;
+@media screen and (min-width: 1024px) {
+  footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+  }
 }
-
 .header-image {
   max-height: 50vh;
   overflow: hidden;
@@ -1626,13 +1627,14 @@ button.dropdown-toggle {
   margin: auto;
 }
 
-footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  text-align: center;
+@media screen and (min-width: 1024px) {
+  footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+  }
 }
-
 .site {
   display: grid;
   grid-template-columns: 25% auto;
@@ -2119,13 +2121,14 @@ button.dropdown-toggle {
   margin: auto;
 }
 
-footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  text-align: center;
+@media screen and (min-width: 1024px) {
+  footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+  }
 }
-
 .header-image {
   max-height: 50vh;
   overflow: hidden;
@@ -2582,13 +2585,14 @@ button.dropdown-toggle {
   margin: auto;
 }
 
-footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  text-align: center;
+@media screen and (min-width: 1024px) {
+  footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+  }
 }
-
 /*--------------------------------------------------------------
 # Components
 --------------------------------------------------------------*/
