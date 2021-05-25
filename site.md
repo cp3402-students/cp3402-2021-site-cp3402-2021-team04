@@ -59,22 +59,3 @@
 <ol>1. In the WordPress Dashboard select Appearance >> Customize >> Site Identity from the left navigation sidebar.</ol>
 <ol>2. Click Select logo and upload the photo you wish to use for the website.</ol>
 <ol>3. Click publish to save your changes and upload to the website. </ol>
-
-<h2>How to create a navigation menu</h2>
-<ol>1. Log into WordPress admin</ol>
-<ol>2. Hover over appearance on the left side column and press customize</ol>
-<ol>3. Press Menus on the left side column</ol>
-<ol>4. Select your Menu(Primary) or create a new one with the "Create new menu button"</ol>
-<ol>5. Find the "add menu items" tab and begin adding pages to your menu with the "Add to Menu" button.</ol>
-<ol>6. Change the menu structure so that it is how you want it with children menu items.</ol>
-<ol>7. Set display locations to Primary.</ol>
-<ol>8. Press Save Menu in the bottom right of your screen. Exit the admin and open your website to test if your menu is there.</ol>
-
-<h2>How to create a footer social media menu</h2>
-
-<ol>1. Log into WordPress admin</ol>
-<ol>2. Hover over appearance on the left side column and press customize</ol>
-<ol>3. Press Menus on the left side column</ol>
-<ol>4. Select your Social Media Menu or create a new one with the "Create new menu button"</ol>
-<ol>5. Find the Menu Locations tab on the left and set to Social Media Menu</ol>
-<ol>6. Press Save Menu in the bottom right of your screen. Exit the admin and to test scroll to the footer to see if your social media links are there.</ol>

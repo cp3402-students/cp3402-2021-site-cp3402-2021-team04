@@ -1,7 +1,7 @@
 // change background color of site footer
 .site-footer {
   grid-area: footer;
-  background-color: slategrey;
+  background-color: $color__text-input-focus;
   color: white;
   padding: 1em;
   text-align: center;

@@ -23,7 +23,7 @@
     &:focus,
     &:hover {
       background-color: $color__action;
-      color: white;
+      color: $color__post-and-pages-text;
     }
   }
 }
@@ -38,7 +38,7 @@
 
   a {
     text-decoration: none;
-    color: black;
+    color: $color__action;
 
     &:focus,
     &:hover {
@@ -53,11 +53,11 @@
   a {
     font-weight: 700;
     text-decoration: none;
-    color: black;
+    color: $color__action;
 
     &:focus,
     &:hover {
-      color: black;
+      color: $color__action;
       border-bottom: 3px solid $color__action;
     }
   }
