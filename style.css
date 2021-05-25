@@ -381,7 +381,7 @@ html {
 /* Typography
 --------------------------------------------- */
 body, button, input, select, optgroup, textarea {
-  color: #404040;
+  color: #EBEDEF;
   font-family: Georgia, Cambria, "Times New Roman", Times, serif;
   line-height: 1.5;
 }
@@ -486,7 +486,7 @@ big {
 /* Elements
 --------------------------------------------- */
 body {
-  background: #fff;
+  background: #EBEDEF;
 }
 
 .site-main {
@@ -596,7 +596,7 @@ a:visited {
   color: #800080;
 }
 a:hover, a:focus, a:active {
-  color: #1BB1DE;
+  color: #EBEDEF;
 }
 a:focus {
   outline: thin dotted;
@@ -720,7 +720,7 @@ textarea {
   position: relative;
   padding: 1em;
   color: #ffffff;
-  background-color: #dfb301;
+  background-color: #483D8B;
 }
 @media screen and (min-width: 375px) {
   .site-header {
@@ -760,7 +760,7 @@ textarea {
 }
 .site-branding .site-branding-text .site-description {
   float: right;
-  color: black;
+  color: #ffffff;
   font-size: 1.25em;
 }
 
@@ -861,7 +861,7 @@ textarea {
   position: relative;
 }
 .main-navigation ul a {
-  color: black;
+  color: #ffffff;
 }
 
 button.dropdown-toggle {
@@ -906,7 +906,7 @@ button.dropdown-toggle {
     padding: 12.5px 16px;
   }
   .main-navigation ul li:hover {
-    background: #dfb301;
+    background: #483D8B;
   }
   .main-navigation ul li:hover ul {
     display: block;
@@ -1095,7 +1095,7 @@ button.dropdown-toggle {
 }
 .site-footer {
   grid-area: footer;
-  background-color: slategrey;
+  background-color: #111;
   color: white;
   padding: 1em;
   text-align: center;
@@ -1184,7 +1184,7 @@ button.dropdown-toggle {
   position: relative;
   padding: 1em;
   color: #ffffff;
-  background-color: #dfb301;
+  background-color: #483D8B;
 }
 @media screen and (min-width: 375px) {
   .site-header {
@@ -1224,7 +1224,7 @@ button.dropdown-toggle {
 }
 .site-branding .site-branding-text .site-description {
   float: right;
-  color: black;
+  color: #ffffff;
   font-size: 1.25em;
 }
 
@@ -1325,7 +1325,7 @@ button.dropdown-toggle {
   position: relative;
 }
 .main-navigation ul a {
-  color: black;
+  color: #ffffff;
 }
 
 button.dropdown-toggle {
@@ -1370,7 +1370,7 @@ button.dropdown-toggle {
     padding: 12.5px 16px;
   }
   .main-navigation ul li:hover {
-    background: #dfb301;
+    background: #483D8B;
   }
   .main-navigation ul li:hover ul {
     display: block;
@@ -1559,7 +1559,7 @@ button.dropdown-toggle {
 }
 .site-footer {
   grid-area: footer;
-  background-color: slategrey;
+  background-color: #111;
   color: white;
   padding: 1em;
   text-align: center;
@@ -1678,7 +1678,7 @@ button.dropdown-toggle {
   position: relative;
   padding: 1em;
   color: #ffffff;
-  background-color: #dfb301;
+  background-color: #483D8B;
 }
 @media screen and (min-width: 375px) {
   .site-header {
@@ -1718,7 +1718,7 @@ button.dropdown-toggle {
 }
 .site-branding .site-branding-text .site-description {
   float: right;
-  color: black;
+  color: #ffffff;
   font-size: 1.25em;
 }
 
@@ -1819,7 +1819,7 @@ button.dropdown-toggle {
   position: relative;
 }
 .main-navigation ul a {
-  color: black;
+  color: #ffffff;
 }
 
 button.dropdown-toggle {
@@ -1864,7 +1864,7 @@ button.dropdown-toggle {
     padding: 12.5px 16px;
   }
   .main-navigation ul li:hover {
-    background: #dfb301;
+    background: #483D8B;
   }
   .main-navigation ul li:hover ul {
     display: block;
@@ -2053,7 +2053,7 @@ button.dropdown-toggle {
 }
 .site-footer {
   grid-area: footer;
-  background-color: slategrey;
+  background-color: #111;
   color: white;
   padding: 1em;
   text-align: center;
@@ -2142,7 +2142,7 @@ button.dropdown-toggle {
   position: relative;
   padding: 1em;
   color: #ffffff;
-  background-color: #dfb301;
+  background-color: #483D8B;
 }
 @media screen and (min-width: 375px) {
   .site-header {
@@ -2182,7 +2182,7 @@ button.dropdown-toggle {
 }
 .site-branding .site-branding-text .site-description {
   float: right;
-  color: black;
+  color: #ffffff;
   font-size: 1.25em;
 }
 
@@ -2283,7 +2283,7 @@ button.dropdown-toggle {
   position: relative;
 }
 .main-navigation ul a {
-  color: black;
+  color: #ffffff;
 }
 
 button.dropdown-toggle {
@@ -2328,7 +2328,7 @@ button.dropdown-toggle {
     padding: 12.5px 16px;
   }
   .main-navigation ul li:hover {
-    background: #dfb301;
+    background: #483D8B;
   }
   .main-navigation ul li:hover ul {
     display: block;
@@ -2517,7 +2517,7 @@ button.dropdown-toggle {
 }
 .site-footer {
   grid-area: footer;
-  background-color: slategrey;
+  background-color: #111;
   color: white;
   padding: 1em;
   text-align: center;
@@ -2626,8 +2626,8 @@ button.dropdown-toggle {
 .paging-navigation a:hover,
 .paging-navigation a:focus {
   color: black;
-  border-color: #1BB1DE;
-  background: #1BB1DE;
+  border-color: #EBEDEF;
+  background: #EBEDEF;
 }
 
 .nav-links {
@@ -2680,7 +2680,7 @@ button.dropdown-toggle {
 .post-navigation .post-title {
   font-size: 1.2em;
   font-weight: 700;
-  border-bottom: 3px solid #1BB1DE;
+  border-bottom: 3px solid #EBEDEF;
 }
 .post-navigation a:hover .post-title,
 .post-navigation a:focus .post-title {
@@ -2709,11 +2709,11 @@ button.dropdown-toggle {
 .cat-links a {
   text-decoration: none;
   text-transform: uppercase;
-  color: #1BB1DE;
+  color: #EBEDEF;
 }
 .cat-links a:focus, .cat-links a:hover {
-  background-color: #1BB1DE;
-  color: white;
+  background-color: #EBEDEF;
+  color: #EBEDEF;
 }
 
 .entry-title {
@@ -2727,10 +2727,10 @@ button.dropdown-toggle {
 }
 .entry-title a {
   text-decoration: none;
-  color: black;
+  color: #EBEDEF;
 }
 .entry-title a:focus, .entry-title a:hover {
-  border-bottom: 5px solid #1BB1DE;
+  border-bottom: 5px solid #EBEDEF;
 }
 
 .entry-meta {
@@ -2739,11 +2739,11 @@ button.dropdown-toggle {
 .entry-meta a {
   font-weight: 700;
   text-decoration: none;
-  color: black;
+  color: #EBEDEF;
 }
 .entry-meta a:focus, .entry-meta a:hover {
-  color: black;
-  border-bottom: 3px solid #1BB1DE;
+  color: #EBEDEF;
+  border-bottom: 3px solid #EBEDEF;
 }
 
 .comments-link::before,
