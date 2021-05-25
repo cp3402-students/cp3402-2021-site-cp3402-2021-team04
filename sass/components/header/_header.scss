@@ -15,7 +15,7 @@
   position: relative;
   padding: 1em;
   color: $color__text-white;
-  background-color: $color__background-header;
+  background-color: #483D8B;
 
   // Add different padding on larger displays
   @media screen and (min-width: $query__mobile-m) {
